@@ -1,0 +1,24 @@
+<div class="offcanvas" id="offcanvas">
+  <div class="offcanvas-header">
+    <h3>Navigation</h3>
+    <button class="close-btn" onclick="toggleMenu()">×</button>
+  </div>
+  <nav>
+    <ul class="nav-menu">
+      <li><a href="/">Home</a></li>
+      {% assign chapters = site.chapters %} {% for chapter in chapters %}
+      <li>
+        <a href="{{chapter.url}}" class="nav-section">
+          <small>Chapter {{chapter.metadata.chapter}}</small><br />
+          {{chapter.title}}
+        </a>
+        <ul class="nav-submenu">
+          {% for section in chapter.sections %}
+          <li><a href="{{chapter.url}}#{{section.id}}">{{section.title}}</a></li>
+          {% endfor %}
+        </ul>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</div>

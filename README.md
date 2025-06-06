@@ -25,7 +25,7 @@ Every strategy has been forged through real experience building companies across
 
 ## 🌐 Read Online
 
-The complete book is freely available at **[remoteexcellence.guide](https://remoteexcellence.guide)**
+The complete book is freely available at **[remote-excellence.guide](remote-excellence.guide)**
 
 ## 📄 License
 
@@ -96,7 +96,7 @@ Whether you're just beginning your remote journey or looking to level up an exis
 
 ## 🚀 Next Steps
 
-1. **Read the guide** at [remoteexcellence.guide](https://remoteexcellence.guide)
+1. **Read the guide** at [remote-excellence.guide](https://remote-excellence.guide)
 2. **Start with trust** - establish your foundation first
 3. **Join the community** - share your journey and learn from others
 4. **Contribute back** - help improve the guide for future readers

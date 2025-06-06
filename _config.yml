@@ -12,6 +12,5 @@ collections:
 
 twitter_username: lucdiallo
 github_username: luuuc
-
-plugins:
-  - jekyll-feed
+# plugins:
+#   - jekyll-feed

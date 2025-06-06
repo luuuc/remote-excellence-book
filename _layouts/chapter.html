@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    <!-- Header -->
+    {% include header.html %}
+
+    <!-- Offcanvas Menu -->
+    {% include nav.html %}
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="chapter-number">Chapter {{page.metadata.chapter}}</div>
+        <h1>{{page.title}}</h1>
+        <p>{{page.description}}</p>
+        <div class="reading-time">{% include reading_time.html %}</div>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <main class="content">
+      <div class="container">{{content}}</div>
+    </main>
+
+    <!-- Content Footer -->
+    {% if page.next %}
+    <section class="content-footer">
+      <div class="container">
+        <a href="{{page.next.url}}" class="next-chapter">{{page.next.title}} →</a>
+      </div>
+    </section>
+    {% endif %}
+
+    <!-- Footer -->
+    {% include footer.html %}
+    <!-- Foot -->
+    {% include foot.html %}
+  </body>
+</html>
