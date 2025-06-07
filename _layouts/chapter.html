@@ -1,9 +1,12 @@
 <!doctype html>
 <html lang="en">
   <head>
-    {% include head.html %}
+    {% include head.html %} {% include ga_head.html %}
   </head>
   <body>
+    <!-- Analytics -->
+    {% include ga_body.html %}
+
     <!-- Header -->
     {% include header.html %}
 
@@ -37,26 +40,7 @@
     </section>
     {% endif %}
 
-    <div class="container">
-      <script
-        src="https://giscus.app/client.js"
-        data-repo="luuuc/remote-excellence-book"
-        data-repo-id="R_kgDOO0xCgA"
-        data-category="General"
-        data-category-id="DIC_kwDOO0xCgM4CrIPM"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="top"
-        data-theme="light"
-        data-lang="en"
-        data-loading="lazy"
-        crossorigin="anonymous"
-        async
-      ></script>
-      <br />
-    </div>
+    <div class="container">{% include comments.html %}</div>
 
     <!-- Footer -->
     {% include footer.html %}
