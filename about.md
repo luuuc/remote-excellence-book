@@ -35,9 +35,9 @@ If you find value in this guide, you can support its continued development:
 
 ☕ **[Buy me a coffee](https://ko-fi.com/luuuc)** - Quick support and motivation
 
-📖 **[Ebook version](#)** - Formatted ePub, and PDF, for easier reading
+📖 **[Ebook version](https://www.amazon.com/dp/B0FCCGYCF8)** - Formatted ePub, and PDF, for easier reading
 
-📚 **[Paperback edition](#)** - Physical copy for your bookshelf
+`coming soon` 📚 **[Paperback edition](#)** - Physical copy for your bookshelf
 
 Your support helps maintain this free resource and fund new content development.
 
