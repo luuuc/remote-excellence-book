@@ -305,6 +305,10 @@ body {
   border-left-color: #f0ad4e;
 }
 
+.comments {
+ padding: 1rem;
+}
+
 .chapters-list {
   list-style: none;
   padding: 0;
