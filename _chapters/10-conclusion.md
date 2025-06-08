@@ -239,23 +239,23 @@ We'd love to hear about your remote excellence implementations:
 
 ### Books
 
-- "Remote: Office Not Required" by Jason Fried and David Heinemeier Hansson
-- "Distributed Work's Five Levels of Autonomy" by Matt Mullenweg
-- "The Culture Code" by Daniel Coyle
-- "Radical Candor" by Kim Scott
+- "[Remote: Office Not Required](https://basecamp.com/books#remote)" by Jason Fried and David Heinemeier Hansson
+- "[Distributed Work's Five Levels of Autonomy](https://ma.tt/2020/04/five-levels-of-autonomy/)" by Matt Mullenweg
+- "[The Culture Code](https://danielcoyle.com/the-culture-code/)" by Daniel Coyle
+- "[Radical Candor](https://www.radicalcandor.com/the-book/)" by Kim Scott
 
 ### Research and Studies
 
-- Harvard Business School: "The Future of Remote Work"
-- Gallup: "State of the Global Workplace" (annual)
-- Buffer: "State of Remote Work" (annual)
-- GitLab: "All-Remote Work Guide"
+- Harvard Business School: "[Our Work-from-Anywhere Future](https://hbr.org/2020/11/our-work-from-anywhere-future)"
+- Gallup: "[State of the Global Workplace](https://www.gallup.com/workplace/349484/state-of-the-global-workplace.aspx)" (annual)
+- Buffer: "[State of Remote Work](https://buffer.com/state-of-remote-work)" (annual)
+- GitLab: "[All-Remote Work Guide](https://handbook.gitlab.com/handbook/company/culture/all-remote/guide/)"
 
 ### Rails Community Resources
 
-- The Rails Doctrine: rubyonrails.org/doctrine
-- Basecamp's Shape Up: basecamp.com/shapeup
-- 37signals Blog: 37signals.com/blog
+- The Rails Doctrine: [rubyonrails.org/doctrine](https://rubyonrails.org/doctrine)
+- Basecamp's Shape Up: [basecamp.com/shapeup](https://basecamp.com/shapeup)
+- 37signals: [37signals.com](https://37signals.com)
 
 # Acknowledgments {#chapter-10-6}
 
