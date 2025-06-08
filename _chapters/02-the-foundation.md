@@ -63,30 +63,30 @@ The companies that struggle most with remote work are invariably those attemptin
 
 Even with the best intentions, many remote organizations stumble when establishing trust. Watch for these warning signs:
 
-## 1. Surveillance Reflexes Under Pressure
+## Surveillance Reflexes Under Pressure
+When deadlines loom or problems arise, there's a tendency to revert to monitoring activities rather than outcomes
 
-- When deadlines loom or problems arise, there's a tendency to revert to monitoring activities rather than outcomes
-- Solution: Create crisis response protocols that maintain trust while addressing urgent issues
+**Solution**: Create crisis response protocols that maintain trust while addressing urgent issues
 
-## 2. Inconsistent Expectations Across Teams
+## Inconsistent Expectations Across Teams
+Different team leads set varying standards for availability and communication
 
-- Different team leads set varying standards for availability and communication
-- Solution: Document explicit company-wide guidelines while allowing for team-specific adaptations
+**Solution**: Document explicit company-wide guidelines while allowing for team-specific adaptations
 
-## 3. The "Out of Sight, Out of Mind" Effect
+## The "Out of Sight, Out of Mind" Effect
+Remote team members receiving less recognition and fewer advancement opportunities
 
-- Remote team members receiving less recognition and fewer advancement opportunities
-- Solution: Implement structured visibility systems that highlight contributions regardless of location
+**Solution**: Implement structured visibility systems that highlight contributions regardless of location
 
-## 4. Trust Asymmetry Between Headquarters and Remote Locations
+## Trust Asymmetry Between Headquarters and Remote Locations
+Teams in or near headquarters experience higher trust than fully distributed members
 
-- Teams in or near headquarters experience higher trust than fully distributed members
-- Solution: Apply remote-first principles consistently to all team members regardless of location
+**Solution**: Apply remote-first principles consistently to all team members regardless of location
 
-## 5. Over-reliance on Synchronous Trust-Building
+## Over-reliance on Synchronous Trust-Building
+Assuming trust can only be built through real-time interactions like video calls
 
-- Assuming trust can only be built through real-time interactions like video calls
-- Solution: Develop asynchronous trust-building practices through written communication quality and follow-through consistency
+**Solution**: Develop asynchronous trust-building practices through written communication quality and follow-through consistency
 
 {% include callout/warning.html content="Address these patterns in your organization quickly before they erode your trust foundation." %}
 
@@ -94,28 +94,31 @@ Even with the best intentions, many remote organizations stumble when establishi
 
 Transparency is the bedrock upon which trust is built in remote environments. When team members can't see each other working, they need other ways to establish confidence.
 
-## Implementation approaches
+Implementation approaches:
 
-### 1. Decision Transparency
+## Decision Transparency
+Help your team understand not just what was decided, but why it matters.
 
-- Document rationales behind decisions, not just outcomes
-- Make decision-making processes explicit and accessible
-- Share both successes and failures openly
-- Create systems for revisiting and learning from past decisions
+1. Document rationales behind decisions, not just outcomes
+2. Make decision-making processes explicit and accessible
+3. Share both successes and failures openly
+4. Create systems for revisiting and learning from past decisions
 
-### 2. Status Transparency
+## Status Transparency
+Create visibility into real progress without creating surveillance.
 
-- Implement clear systems for tracking progress
-- Visualize work status in ways accessible to everyone
-- Normalize honest reporting of both progress and blockers
-- Celebrate transparency around challenges, not just wins
+1. Implement clear systems for tracking progress
+2. Visualize work status in ways accessible to everyone
+3. Normalize honest reporting of both progress and blockers
+4. Celebrate transparency around challenges, not just wins
 
-### 3. Knowledge Transparency
+## Knowledge Transparency
+Make institutional knowledge accessible to everyone, not just those who were there.
 
-- Create accessible repositories for institutional knowledge
-- Document tribal knowledge systematically
-- Remove hidden prerequisites for effective work
-- Build culture of knowledge sharing over knowledge hoarding
+1. Create accessible repositories for institutional knowledge
+2. Document tribal knowledge systematically
+3. Remove hidden prerequisites for effective work
+4. Build culture of knowledge sharing over knowledge hoarding
 
 {% include callout/example.html content="In your distributed engineering team, you might create a weekly 'decision log' where major technical and product decisions are documented with their context, alternatives considered, and expected outcomes. This creates visibility into the thinking process, not just the decisions themselves, and helps team members understand and align with the direction rather than just receiving orders from above." %}
 
@@ -125,26 +128,29 @@ This approach follows the Rails principle of 'convention over configuration' (es
 
 When you establish a foundation of trust, it enables critical capabilities:
 
-## 1. Genuine Autonomy
+## Genuine Autonomy
+People can make decisions and move work forward without waiting for permission.
 
-- Team members can make meaningful decisions without constant approval
-- Work can progress across time zones without synchronous bottlenecks
-- People can adapt processes to their unique circumstances and strengths
-- Innovation emerges from distributed thinking rather than top-down direction
+1. Team members can make meaningful decisions without constant approval
+2. Work can progress across time zones without synchronous bottlenecks
+3. People can adapt processes to their unique circumstances and strengths
+4. Innovation emerges from distributed thinking rather than top-down direction
 
-## 2. Psychological Safety
+## Psychological Safety
+Team members feel safe to share problems, try new approaches, and learn from mistakes.
 
-- Problems surface early rather than festering in silence
-- Experimentation becomes possible without fear of punishment
-- Learning happens openly through shared mistakes and discoveries
-- Diversity of approach and thought becomes a strength rather than a threat
+1. Problems surface early rather than festering in silence
+2. Experimentation becomes possible without fear of punishment
+3. Learning happens openly through shared mistakes and discoveries
+4. Diversity of approach and thought becomes a strength rather than a threat
 
-## 3. Sustainable Pace
+## Sustainable Pace
+Work happens at a rhythm that people can maintain over time without burning out.
 
-- Work happens during appropriate hours regardless of time zone
-- Recovery time is respected rather than seen as lack of commitment
-- Team resilience increases through reasonable expectations
-- Long-term performance replaces short-term heroics
+1. Work happens during appropriate hours regardless of time zone
+2. Recovery time is respected rather than seen as lack of commitment
+3. Team resilience increases through reasonable expectations
+4. Long-term performance replaces short-term heroics
 
 {% include callout/example.html content="A trust-based remote culture might look like this: A developer in Tokyo discovers a critical bug late on Friday in her time zone. Rather than feeling pressure to solve it immediately and work into her weekend, she documents the issue thoroughly, implements a temporary safeguard, and notifies the team. Her colleague in Berlin picks it up during his working hours, makes progress, and hands it off to the team member in Toronto, who completes the fix. The bug is solved within 24 hours without anyone working outside reasonable hours, through a 'follow the sun'" %}
 
@@ -154,26 +160,29 @@ This scenario isn't possible in low-trust environments where people feel they mu
 
 Trust doesn't emerge spontaneously in remote environments. It requires deliberate practices:
 
-## 1. Start with Trust as the Default
+## Start with Trust as the Default
+Begin every relationship assuming people are capable and well-intentioned.
 
-- Assume competence and good intentions from day one
-- Give meaningful responsibilities early rather than earning them over time
-- Address specific issues if they arise rather than implementing blanket restrictions
-- Create safety for appropriate vulnerability and authenticity
+1. Assume competence and good intentions from day one
+2. Give meaningful responsibilities early rather than earning them over time
+3. Address specific issues if they arise rather than implementing blanket restrictions
+4. Create safety for appropriate vulnerability and authenticity
 
-## 2. Implement Trust Scaffolding
+## Implement Trust Scaffolding
+Build lightweight systems that support autonomy while providing necessary guardrails.
 
-- Design lightweight check-in systems that create visibility without surveillance
-- Create clear escalation paths for when help is needed
-- Develop explicit decision authority guidelines
-- Build processes that support autonomy with appropriate constraints
+1. Design lightweight check-in systems that create visibility without surveillance
+2. Create clear escalation paths for when help is needed
+3. Develop explicit decision authority guidelines
+4. Build processes that support autonomy with appropriate constraints
 
-## 3. Model Trust Behaviors as Leaders
+## Model Trust Behaviors as Leaders
+Show the vulnerability and accountability you want to see from your team.
 
-- Demonstrate vulnerability about your own challenges and mistakes
-- Respect boundaries around working hours and availability
-- Acknowledge when you don't have answers
-- Hold yourself accountable to the same standards you expect from others
+1. Demonstrate vulnerability about your own challenges and mistakes
+2. Respect boundaries around working hours and availability
+3. Acknowledge when you don't have answers
+4. Hold yourself accountable to the same standards you expect from others
 
 {% include callout/example.html content="When onboarding new remote team members, instead of starting with restricted permissions and limited responsibilities that gradually expand (the traditional low-trust model), try providing full access to systems and meaningful work immediately, with appropriate guidance and support. This signals your trust and typically leads to faster integration and higher engagement. The rare cases where this trust is misplaced are far outweighed by the benefits of treating team members as capable professionals from day one." %}
 

@@ -110,7 +110,7 @@ This three-layer approach creates a coherent structure for remote communication,
 
 Even well-intentioned remote teams often struggle with communication challenges:
 
-## 1. The 'Always On' Expectation
+## The 'Always On' Expectation
 
 **The problem**: Team members feeling obligated to respond immediately at all hours, leading to burnout and shallow work.
 
@@ -121,7 +121,7 @@ Even well-intentioned remote teams often struggle with communication challenges:
 - Team coordination channels: Within 24 hours on workdays
 - FYI messages: No response explicitly required
 
-## 2. Documentation Without Discoverability
+## Documentation Without Discoverability
 
 **The problem**: Creating thorough documentation that no one can find when needed, leading to duplicated questions and decisions.
 
@@ -129,7 +129,7 @@ Even well-intentioned remote teams often struggle with communication challenges:
 
 **Implementation**: Develop documentation templates with standardized metadata fields, implement a consistent tagging system, and regularly audit search functionality to ensure information can be found when needed.
 
-## 3. Notification Fatigue
+## Notification Fatigue
 
 **The problem**: Overwhelming team members with constant alerts across multiple channels, fragmenting attention and reducing productivity.
 
@@ -137,7 +137,7 @@ Even well-intentioned remote teams often struggle with communication challenges:
 
 **Implementation**: Establish default notification settings for different roles, create "do not disturb" norms during focus time, and periodically remind the team to review their notification settings.
 
-## 4. Invisible Context
+## Invisible Context
 
 **The problem**: Assuming others have the same background information you do, leading to confusion and misaligned decisions.
 
@@ -145,7 +145,7 @@ Even well-intentioned remote teams often struggle with communication challenges:
 
 **Implementation**: Create communication templates that prompt for necessary context, establish norms around linking to relevant background information, and train team members to recognize when context might be missing.
 
-## 5. Time Zone Inequity
+## Time Zone Inequity
 
 **The problem**: Consistent scheduling that favors certain regions, creating second-class team members who always work at inconvenient hours.
 
@@ -159,13 +159,11 @@ Even well-intentioned remote teams often struggle with communication challenges:
 
 One of the most effective practices for remote teams is replacing synchronous daily standups with written async updates. This approach creates visibility without requiring everyone to be available simultaneously, while building a searchable record of progress.
 
-## Implementation steps:
-
-### 1. Create a Dedicated Channel
+## Create a Dedicated Channel
 
 Set up a specific place for daily updates in your team communication tool (Basecamp, Slack, etc.). This keeps updates organized and easily referenced.
 
-### 2. Establish a Simple Template
+## Establish a Simple Template
 
 Provide a consistent structure for updates that captures essential information:
 
@@ -186,23 +184,23 @@ Provide a consistent structure for updates that captures essential information:
 
 This template focuses on progress and needs rather than activity justification.
 
-### 3. Set Clear Expectations
+## Set Clear Expectations
 
 Establish when updates should be posted (typically at the start of each person's workday) and who is responsible for them (usually all individual contributors and team leads).
 
-### 4. Lead by Example
+## Lead by Example
 
 As a leader, consistently post your own updates following the template. This normalizes the practice and demonstrates its value.
 
-### 5. Use Updates as Reference Points
+### Use Updates as Reference Points
 
 Reference these updates during 1:1s, planning sessions, and retrospectives. This reinforces their importance and utility.
 
-### 6. Keep the Focus on Helping
+## Keep the Focus on Helping
 
 Frame updates as tools for coordination and support, not monitoring or surveillance. The goal is surfacing needs and sharing progress, not justifying activity.
 
-### 7. Create a 1:1 Review Process
+## Create a 1:1 Review Process
 
 Use the accumulated updates as material for substantive weekly or bi-weekly 1:1 conversations. They create a record of progress, challenges, and patterns over time.
 
@@ -216,13 +214,11 @@ This approach mirrors the principle of convention over configuration. By establi
 
 Remote teams miss the spontaneous interactions that happen in physical offices. Here's how to recreate some of that connective tissue:
 
-## Implementation steps:
-
-### 1. Create a Dedicated Channel
+## Create a Dedicated Channel
 
 Set up a space specifically for casual conversation, with a name like "Coffee Machine," "Water Cooler," or "Random." Make it clear this channel is for non-work and semi-work topics.
 
-### 2. Establish Loose Norms Around Usage
+## Establish Loose Norms Around Usage
 
 Encourage various types of casual updates:
 - Morning check-ins ("Good morning team! Working on the payment integration today")
@@ -230,15 +226,15 @@ Encourage various types of casual updates:
 - Quick celebrations ("Just landed that tricky feature! 🎉 ")
 - Personal notes that would naturally come up in an office ("My daughter won her soccer game!")
 
-### 3. Participate Authentically as Leaders
+## Participate Authentically as Leaders
 
 Model the behavior you want to see by sharing appropriate personal context and responding to others' posts. Your example sets the tone.
 
-### 4. Keep it Low-Pressure
+## Keep it Low-Pressure
 
 Make it explicit that participation is optional. Some team members will engage more than others, and that's perfectly fine.
 
-### 5. Use Reactions Liberally
+## Use Reactions Liberally
 
 Encourage using emoji reactions to acknowledge posts without creating notification noise. This creates connection without disruption.
 
@@ -321,7 +317,7 @@ One of the biggest pitfalls in remote work is the endless addition of "productiv
 
 Here's a practical approach to managing your remote toolset:
 
-> "Every new tool should solve a critical problem, not just be 'nice to have.' Each addition creates cognitive overhead for the entire team."
+*Every new tool should solve a critical problem, not just be 'nice to have.' Each addition creates cognitive overhead for the entire team.*
 
 This echoes the philosophy of having 'one right way to do things' - rather than offering fifteen different ways to accomplish the same task, find the most elegant solution and standardize on it.
 
