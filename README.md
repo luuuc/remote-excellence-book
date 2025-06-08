@@ -25,7 +25,7 @@ Every strategy has been forged through real experience building companies across
 
 ## 🌐 Read Online
 
-The complete book is freely available at **[remote-excellence.guide](remote-excellence.guide)**
+The complete book is freely available at **[remote-excellence.guide](https://remote-excellence.guide)**
 
 ## 📄 License
 
@@ -80,8 +80,8 @@ bundle exec jekyll serve
 If you find value in this guide, consider supporting its continued development:
 
 - ☕ **[Buy me a coffee](https://ko-fi.com/luuuc)** - Quick support and motivation
-- 📖 **[Ebook version](https://gumroad.com)** - Formatted ePub and PDF for easier reading
-- 📚 **[Paperback edition](https://www.amazon.com)** - Physical copy for your bookshelf
+- 📖 **[Ebook version](https://www.amazon.com/dp/B0FCCGYCF8)** - Formatted ePub and PDF for easier reading
+- `coming soon` 📚 **[Paperback edition](#)** - Physical copy for your bookshelf
 
 Your support helps maintain this free resource and fund new content development.
 

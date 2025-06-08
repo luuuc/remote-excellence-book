@@ -14,9 +14,9 @@ title: Remote Excellence
 description: A practical playbook for building distributed teams that thrive through trust, intentional communication, and human connection while embracing technical simplicity.
 ---
 
-Most companies treat remote work as an accommodation. The best treat it as a superpower.
+> “Most companies treat remote work as an accommodation. The best treat it as a superpower.”
 
-This guide shows you how to build the latter: distributed teams that move faster, adapt quicker, and access global talent while creating environments where people do their genuinely best work.
+This playbook shows you how to build the latter: distributed teams that move faster, adapt quicker, and access global talent while creating environments where people do their genuinely best work.
 
 # The Remote Excellence Framework
 

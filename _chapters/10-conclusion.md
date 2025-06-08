@@ -277,7 +277,7 @@ The conversation continues with each company that chooses trust over surveillanc
 
 # About the Author {#chapter-10-7}
 
-About The Author Luc B. Perussault-Diallo Luc B. Perussault-Diallo is a technical founder and CTO with over 20 years of experience building and scaling engineering teams. For the past decade, he has led distributed teams across 12 countries and 4 continents, most recently as CTO and co-founder of ANKA (formerly Afrikrea), where he built Africa’s largest e-commerce export platform.
+Luc B. Perussault-Diallo is a technical founder and CTO with over 20 years of experience building and scaling engineering teams. For the past decade, he has led distributed teams across 12 countries and 4 continents, most recently as CTO and co-founder of ANKA (formerly Afrikrea), where he built Africa’s largest e-commerce export platform.
 
 Under his technical leadership, ANKA processed over $80 million in transactions across 175 countries worldwide, facilitating over 10 tons of monthly exports that connected African creators and manufacturers with global markets. His approach to remote work evolved from the practical challenges of managing engineering teams spread across Europe, Africa, South America, and Asia, where reliable infrastructure couldn’t be taken for granted and cultural differences added layers of complexity to every interaction.
 
