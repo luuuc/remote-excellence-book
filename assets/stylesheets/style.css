@@ -1,12 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap");
-
-.merriweather {
-  font-family: "Merriweather", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-}
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
 
 * {
   margin: 0;
@@ -19,7 +11,7 @@
 body {
   font-family: "Merriweather", Georgia, serif;
   //-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-  line-height: 1.6;
+  line-height: 1.8;
   color: #333;
 }
 
@@ -126,7 +118,6 @@ body {
 
 .nav-submenu {
   list-style: none;
-  margin-left: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -135,13 +126,20 @@ body {
 }
 
 .nav-submenu a {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: normal;
-  color: #666;
+  color: #000;
   border-bottom: none;
   padding: 0.25rem 0;
 }
 
+.nav-submenu a small {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #999;
+  border-bottom: none;
+  padding: 0.25rem 0;
+}
 .nav-submenu a:hover {
   color: #007acc;
 }
@@ -153,7 +151,7 @@ body {
 .nav-part-title {
   display: block;
   font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: #253951;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -347,6 +345,10 @@ body {
 
 .content .callout-warning {
   border-left-color: #f0ad4e;
+}
+
+.reading-time {
+  opacity: 0.6;
 }
 
 .comments {
