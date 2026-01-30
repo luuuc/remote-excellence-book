@@ -4,7 +4,7 @@ title: "Before You Start"
 part: "Before You Start"
 order: 1
 metadata:
-  principle: 00a
+  principle: 00
   reading_time_in_minutes: 2
 categories:
   - fundamentals
@@ -14,8 +14,6 @@ seo:
   description: An opinionated guide for founders and leaders building remote-first companies. No hedging, no "it depends" - just battle-tested principles for distributed teams that actually work.
   keywords: remote work book, remote-first guide, distributed team leadership, remote company founders, hybrid work alternative
 ---
-
-# Before You Start
 
 This book is not balanced.
 
@@ -29,10 +27,12 @@ Some of those opinions will make you uncomfortable. Good.
 - Managers who suspect their current approach isn't working
 - Anyone tired of pretending hybrid is the answer
 
+
 **This book is not for:**
 - People looking for permission to keep doing what they're doing
 - Companies that want remote to feel exactly like the office
 - Managers who need to see butts in seats to feel in control
+
 
 We're going to tell you that most of what passes for "remote work" is actually office work done badly from home. We're going to tell you that your daily standups are a waste of time. We're going to tell you that your tracking software is an admission of failure.
 

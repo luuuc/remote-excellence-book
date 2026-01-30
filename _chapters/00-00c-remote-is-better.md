@@ -4,7 +4,7 @@ title: "Remote Is Better"
 part: "Before You Start"
 order: 3
 metadata:
-  principle: 00c
+  principle: 00
   reading_time_in_minutes: 3
 categories:
   - fundamentals
@@ -14,8 +14,6 @@ seo:
   description: Remote work isn't a compromise - it's an upgrade. Better talent, better focus, better clarity, better economics. The case for why distributed teams outperform offices.
   keywords: remote work benefits, remote vs office, distributed team advantages, global talent hiring, remote work productivity, office alternatives
 ---
-
-# Remote Is Better
 
 Not just possible. Not just viable. Better.
 

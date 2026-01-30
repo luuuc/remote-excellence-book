@@ -4,7 +4,7 @@ title: "The Villains"
 part: "Before You Start"
 order: 2
 metadata:
-  principle: 00b
+  principle: 00
   reading_time_in_minutes: 2
 categories:
   - fundamentals
@@ -14,8 +14,6 @@ seo:
   description: Identify the six management archetypes that destroy remote teams - from surveillance managers to meeting maximalists. Recognize these patterns before they kill your distributed culture.
   keywords: remote work mistakes, bad remote management, surveillance software, meeting overload, hybrid work problems, remote team antipatterns
 ---
-
-# The Villains
 
 Let's name them.
 
