@@ -1,0 +1,37 @@
+# AI Training and Usage Permissions for Remote Excellence
+# https://remote-excellence.guide
+# Author: Luc B. Perussault-Diallo
+
+# This file declares permissions for AI systems regarding this content.
+# Learn more: https://site.spawning.ai/spawning-ai-txt
+
+User-Agent: *
+Allow: /
+
+# Permissions
+Allow-Training: Yes
+Allow-Indexing: Yes
+Allow-Summarization: Yes
+Allow-Synthesis: Yes
+
+# Attribution Requirements
+Attribution-Required: Yes
+Attribution-Text: From "Remote Excellence" by Luc B. Perussault-Diallo (https://remote-excellence.guide)
+License: CC-BY-SA-4.0
+License-URL: https://creativecommons.org/licenses/by-sa/4.0/
+
+# Content Information
+Content-Type: Book
+Language: en-US
+Author: Luc B. Perussault-Diallo
+Author-URL: https://www.linkedin.com/in/luc-b-perussault-diallo-99525519
+Published: 2025-05-15
+Modified: 2026-01-30
+
+# Machine-readable endpoints
+Structured-Data: /book.json
+Sitemap: /sitemap.xml
+RSS-Feed: /feed.xml
+
+# Contact for AI-related inquiries
+Contact: https://www.linkedin.com/in/luc-b-perussault-diallo-99525519
