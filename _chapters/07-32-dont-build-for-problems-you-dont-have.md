@@ -15,8 +15,6 @@ seo:
   keywords: over-engineering, premature optimization, startup processes, lean operations, right-sized processes, avoid bureaucracy
 ---
 
-# Don't Build for Problems You Don't Have
-
 Don't over-engineer too early.
 
 There's a temptation to build enterprise-grade processes for a ten-person team. Org charts. Approval workflows. Detailed documentation standards.

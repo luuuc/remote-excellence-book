@@ -15,9 +15,7 @@ seo:
   keywords: Slack vs Basecamp, tool culture impact, presence indicators, async tools, remote work tools, communication tool choice
 ---
 
-# Your Tools Shape Your Culture
-
-Tools aren't neutral. They encode assumptions.
+> Tools aren't neutral. They encode assumptions.
 
 Slack assumes you're always available. The green dot. The typing indicator. The expectation of rapid response. Use Slack as your primary communication tool and you've built an interruption culture—whether you meant to or not.
 
@@ -36,7 +34,8 @@ Neither is right or wrong. But choose consciously.
 The tool you choose for daily communication will shape your culture more than any manifesto or handbook.
 
 
-> "We switched from Slack to Basecamp and our whole rhythm changed. Fewer interruptions. Longer chunks of focus time. We didn't mandate that—the tool made it the path of least resistance." — COO, remote agency
+> "We shape our tools and thereafter our tools shape us."<br>
+> <small>— John Culkin</small>
 
 
 **Watch out for:**

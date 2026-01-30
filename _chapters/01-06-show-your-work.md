@@ -15,8 +15,6 @@ seo:
   keywords: transparent leadership, decision documentation, remote team transparency, working out loud, async communication, remote team trust
 ---
 
-# Show Your Work
-
 In an office, you absorb context by osmosis. You overhear conversations. You see who's talking to whom. You pick up signals.
 
 Remote teams don't have that luxury.

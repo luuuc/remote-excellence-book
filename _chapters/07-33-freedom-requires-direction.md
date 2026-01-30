@@ -15,8 +15,6 @@ seo:
   keywords: team alignment, autonomy and alignment, clear goals remote, decision frameworks, remote team direction, OKRs remote teams
 ---
 
-# Freedom Requires Direction
-
 Remote enables autonomy. People work independently, make decisions, move fast.
 
 But autonomy without alignment is chaos.

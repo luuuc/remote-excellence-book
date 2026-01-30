@@ -15,7 +15,7 @@ seo:
   keywords: documentation culture, written communication, remote documentation, async communication, decision documentation, remote team processes
 ---
 
-# If It's Not Written, It Doesn't Exist
+> Writing isn't overhead. It's the work.
 
 This is the foundational rule of remote work. Verbal agreements evaporate. Slack threads get buried. Meeting decisions disappear.
 
@@ -30,7 +30,8 @@ Writing isn't overhead. It's the work.
 The discipline of writing forces clarity. If you can't write it simply, you don't understand it well enough. If others can't find it, it might as well not exist.
 
 
-> "We had a 'no decision without a doc' rule. At first people complained it slowed things down. Six months later, we realized we'd stopped having the same arguments twice. Everything was written, findable, and settled." — Head of Product, 80-person remote company
+> "The reason writing a good 4-page memo is harder than 'writing' a 20-page PowerPoint is because the narrative structure of a good memo forces better thought and better understanding."<br>
+> <small>— Jeff Bezos</small>
 
 
 **The test:** Can someone who joins in six months find and understand this decision? If not, it doesn't exist.

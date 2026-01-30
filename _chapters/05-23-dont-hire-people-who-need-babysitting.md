@@ -15,8 +15,6 @@ seo:
   keywords: autonomous employees, self-directed workers, remote work autonomy, hiring for independence, remote team hiring, self-starters
 ---
 
-# Don't Hire People Who Need Babysitting
-
 Some people need constant direction. They wait to be told what to do. They escalate every decision.
 
 Remote will break them.

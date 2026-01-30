@@ -15,8 +15,6 @@ seo:
   keywords: remote onboarding, documentation quality, new hire experience, self-service onboarding, knowledge base, tribal knowledge
 ---
 
-# Your Docs Are Your Onboarding
-
 New hire onboarding reveals your documentation quality.
 
 If onboarding requires weeks of shadowing, constant questions, and tribal knowledge transfer, your documentation is failing.

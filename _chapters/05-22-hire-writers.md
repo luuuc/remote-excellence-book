@@ -15,8 +15,6 @@ seo:
   keywords: remote hiring skills, writing skills, async communication, remote interview process, clear communication, hiring for remote
 ---
 
-# Hire Writers
-
 In remote work, writing is a core skill.
 
 Clear writers think clearly. They explain context. They anticipate questions. They make async communication work.
@@ -24,7 +22,8 @@ Clear writers think clearly. They explain context. They anticipate questions. Th
 Poor writers create confusion. Every message needs follow-up. Every document raises more questions than it answers.
 
 
-> "We added a writing exercise to our interview process. Nothing fancy—just 'explain a technical concept to a non-technical person in 200 words.' The correlation between that score and remote success was almost perfect." — Hiring manager, distributed engineering team
+> "There is no way to write a six-page narratively structured memo and not have clear thinking."<br>
+> <small>— Jeff Bezos</small>
 
 
 When you hire for remote, look at how candidates communicate in writing:

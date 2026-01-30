@@ -15,8 +15,6 @@ seo:
   keywords: home office stipend, remote work equipment, ergonomic setup, work from home budget, remote employee benefits, home office investment
 ---
 
-# Buy Them a Damn Chair
-
 Your remote employees work from home. Make sure home works.
 
 A good chair. A proper desk. A monitor that doesn't strain their eyes. Reliable internet. These aren't perks—they're tools.

@@ -15,8 +15,6 @@ seo:
   keywords: global hiring, international remote teams, worldwide talent, remote hiring strategy, distributed workforce, location-independent hiring
 ---
 
-# Stop Hiring From Your Zip Code
-
 Remote unlocks the world.
 
 You're not competing for the three engineers in your city who happen to be job hunting. You're choosing from everyone, everywhere.

@@ -15,8 +15,6 @@ seo:
   keywords: process improvement, remote retrospectives, continuous improvement, team reflection, evolving processes, remote work iteration
 ---
 
-# Question Everything, Regularly
-
 Your remote processes will break.
 
 What worked at five people won't work at fifteen. What worked last quarter won't work next quarter. The tools you chose will show their limits. The rituals you loved will become stale.

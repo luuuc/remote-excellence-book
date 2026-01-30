@@ -15,8 +15,6 @@ seo:
   keywords: time zone fairness, global team meetings, meeting rotation, distributed team equality, international team coordination, remote inclusion
 ---
 
-# Rotate the Pain
-
 Someone always gets the bad meeting time.
 
 If it's always the same person, that's a problem. You've created a second-class team member. Their participation is an afterthought.

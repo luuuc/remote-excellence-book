@@ -15,8 +15,6 @@ seo:
   keywords: notification management, Slack notifications, digital wellness, focus time, notification fatigue, remote work anxiety, deep work
 ---
 
-# Turn Off Your Notifications
-
 Your team is drowning in pings.
 
 Every tool wants attention. Every channel demands response. The red dots multiply.

@@ -15,8 +15,6 @@ seo:
   keywords: remote relationships, team connection, knowing colleagues, human-first culture, remote team bonding, personal connections work
 ---
 
-# Humans First, Functions Second
-
 In offices, you learn about people accidentally. The family photo on the desk. The overheard phone call. The conversation in the elevator about the weekend.
 
 Remote has no accidents. You have to be deliberate.
@@ -36,9 +34,6 @@ Start meetings with a minute of human catch-up. Not forced, not formal. Just "ho
 Share your own stuff. Model the behavior. If the leader is all business all the time, everyone else will be too.
 
 Create prompts. "What's one thing you did this weekend?" in a Friday thread. "What are you reading?" in a random channel. Low stakes, easy to participate or ignore.
-
-
-> "I worked with someone for eight months before I learned she was a competitive sailor. Once I knew that, our whole relationship changed. She wasn't just 'the PM'—she was a person." — Remote worker, enterprise company
 
 
 Don't mandate oversharing. Some people are private. That's fine.

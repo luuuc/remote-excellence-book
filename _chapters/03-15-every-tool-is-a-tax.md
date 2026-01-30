@@ -15,8 +15,6 @@ seo:
   keywords: tool proliferation, SaaS sprawl, remote tool stack, minimal tools, software overhead, tool consolidation
 ---
 
-# Every Tool Is a Tax
-
 Every new tool creates overhead.
 
 Another login. Another place to check. Another set of notifications. Another thing to learn.

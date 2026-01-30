@@ -15,8 +15,6 @@ seo:
   keywords: meeting culture, meeting cost, async alternatives, Loom video, written proposals, remote meeting policy, meeting reduction
 ---
 
-# Meetings Are Toxic
-
 Meetings should be rare.
 
 When you call a meeting, you're saying: this topic is so complex, so nuanced, so dependent on real-time interaction that async won't work.
@@ -28,7 +26,8 @@ Before scheduling, ask: can this be a document? A Loom video? A written proposal
 When you do meet, make it count. Agenda in advance. Decisions recorded after. No meeting without an artifact.
 
 
-> "I calculated that our weekly team meetings cost $2,400 per hour in loaded salaries. For that price, we should be making major decisions every time. Instead we were doing status updates. We killed the meeting and gave everyone their time back." — VP Engineering, Series C startup
+> "A single meeting can blow a whole afternoon, by breaking it into two pieces each too small to do anything hard in."<br>
+> <small>— Paul Graham, "Maker's Schedule, Manager's Schedule"</small>
 
 
 **The math of meetings:**

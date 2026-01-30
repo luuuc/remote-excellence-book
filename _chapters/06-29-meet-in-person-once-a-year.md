@@ -15,9 +15,7 @@ seo:
   keywords: remote team retreat, annual company gathering, in-person meetup, remote team offsite, team retreat planning, distributed team meeting
 ---
 
-# Meet in Person. Once a Year. Non-Negotiable.
-
-Remote-first doesn't mean never meeting.
+> Remote-first doesn't mean never meeting.
 
 Bring your team together in person at least once a year. This isn't optional. It's not a perk. It's essential infrastructure.
 
@@ -38,7 +36,8 @@ Yes, it's expensive. Flights, hotels, meals, venue. For a 20-person team, you're
 That's still cheaper than a month of office rent in most cities. And the return is higher.
 
 
-> "We nearly cut our annual gathering to save money during a rough patch. Worst idea we almost had. That week together carries us through the whole year." — CEO, 40-person remote company
+> "I see the retreats as an essential part of the work we do together. If we would operate the company without these regular face-to-face gatherings, we would be less effective and feel less connected."<br>
+> — <small>Joel Gascoigne, CEO of Buffer</small>
 
 
 **Make it count:**

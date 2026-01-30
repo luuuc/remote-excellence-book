@@ -15,9 +15,7 @@ seo:
   keywords: tool audit, SaaS reduction, tool minimalism, remote team simplicity, software consolidation, tool overhead costs
 ---
 
-# The Tools You Don't Use
-
-Every tool you reject is a gift to your team.
+> Every tool you reject is a gift to your team.
 
 Someone will suggest a new project management app. A better wiki. A cooler chat platform. A revolutionary way to do standups.
 
@@ -37,7 +35,8 @@ The tool you don't add is communication overhead you don't create. It's one less
 Most teams accumulate tools. Few subtract them.
 
 
-> "We did a tool audit and found we were paying for 14 different SaaS products. We cut it to 5. Nobody missed the other 9. We'd just... accumulated them." — Ops director, 50-person remote company
+> "Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away."<br>
+> <small>— Antoine de Saint-Exupéry</small>
 
 
 **Before adding any tool, ask:**

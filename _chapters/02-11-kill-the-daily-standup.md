@@ -15,8 +15,6 @@ seo:
   keywords: daily standup alternative, async standup, written updates, remote standup, time zone friendly meetings, scrum remote
 ---
 
-# Kill the Daily Standup
-
 Daily standups made sense in offices. Fifteen minutes to sync before diving into work.
 
 They make no sense for distributed teams.

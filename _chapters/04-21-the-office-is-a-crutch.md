@@ -15,8 +15,6 @@ seo:
   keywords: office dysfunction, remote work challenges, communication systems, remote reveals problems, work systems, remote work benefits
 ---
 
-# The Office Is a Crutch
-
 Offices hide dysfunction.
 
 Poor communication? Fixed by walking over. Unclear decisions? Clarified at lunch. Missing context? Absorbed by proximity.

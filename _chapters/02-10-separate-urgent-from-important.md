@@ -15,8 +15,6 @@ seo:
   keywords: communication layers, information architecture, Slack channel organization, remote communication system, knowledge management, async coordination
 ---
 
-# Separate Urgent from Important
-
 Remote communication needs three layers. Each serves a different purpose.
 
 **Real-time** for emergencies. Production issues. Genuine blockers. Response in minutes.

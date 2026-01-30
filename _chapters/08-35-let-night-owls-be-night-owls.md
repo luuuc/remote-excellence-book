@@ -15,8 +15,6 @@ seo:
   keywords: flexible work hours, chronotypes at work, night owl productivity, work schedule flexibility, peak performance hours, asynchronous work
 ---
 
-# Let Night Owls Be Night Owls
-
 Not everyone peaks at 9am.
 
 Some people do their best thinking at 6am before the house wakes up. Others hit their stride at 10pm when it's quiet. Some need a midday break and work in two shifts.

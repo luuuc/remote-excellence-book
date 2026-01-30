@@ -15,8 +15,6 @@ seo:
   keywords: information architecture, single source of truth, documentation system, knowledge management, remote team organization, tool consolidation
 ---
 
-# Pick One Place and Stick to It
-
 Where does information live?
 
 If the answer is "depends," you have a problem.

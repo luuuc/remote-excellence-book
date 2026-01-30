@@ -15,8 +15,6 @@ seo:
   keywords: video call fatigue, Zoom fatigue, async video, Loom alternative, meeting reduction, write first culture, remote communication hierarchy
 ---
 
-# Video Is Not the Default
-
 Stop defaulting to video calls.
 
 "Quick sync?" Video call. "Got a question?" Video call. "Need to discuss?" Video call.
@@ -40,9 +38,6 @@ Worse: video calls leave no artifact. The discussion happens, decisions get made
 Most teams have this inverted. They start with video and escalate to writing only when they need documentation.
 
 Flip it.
-
-
-> "We used to have 15 video calls a week. Now we have 3. Same output. Everyone's less tired. The secret was just asking 'could this be a Loom?' before every meeting invite." — Engineering lead, Series B startup
 
 
 Video has its place. But that place is small.

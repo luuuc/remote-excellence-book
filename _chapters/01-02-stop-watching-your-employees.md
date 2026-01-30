@@ -15,8 +15,6 @@ seo:
   keywords: employee monitoring, remote work surveillance, trust vs control, employee tracking software, remote team trust, performance theater
 ---
 
-# Stop Watching Your Employees
-
 You can't monitor remote workers. Not really.
 
 You can install tracking software. You can require cameras on. You can count keystrokes and log hours.

@@ -15,8 +15,6 @@ seo:
   keywords: employee tracking, performance management, remote team monitoring, management failure, employee surveillance alternative, direct feedback
 ---
 
-# Tracking Software Is a Management Failure
-
 When things go wrong, there's a temptation to monitor more closely.
 
 Deadline slipping? Check in more often. Quality dropping? Require more updates. Trust broken once? Watch everyone.

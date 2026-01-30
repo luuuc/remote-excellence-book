@@ -15,8 +15,6 @@ seo:
   keywords: small teams, team size, communication overhead, remote team structure, lean teams, agile team size
 ---
 
-# Three to Five People, Max
-
 Small teams move fast.
 
 Communication overhead grows exponentially with team size. Two people: one connection. Five people: ten connections. Ten people: forty-five.

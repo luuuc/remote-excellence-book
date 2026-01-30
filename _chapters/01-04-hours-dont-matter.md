@@ -15,8 +15,6 @@ seo:
   keywords: outcomes over hours, remote productivity, results-based work, flexible work hours, output vs input, remote work metrics
 ---
 
-# Hours Don't Matter
-
 You can't see people working. Stop trying.
 
 In offices, visibility creates the illusion of productivity. Bodies in chairs. Fingers on keyboards. The appearance of effort.

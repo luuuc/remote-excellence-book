@@ -15,8 +15,6 @@ seo:
   keywords: remote-first vs remote-friendly, hybrid work problems, remote work policy, two-class employees, distributed team equality, office vs remote
 ---
 
-# Remote-Friendly Is a Lie
-
 There's a massive difference.
 
 Remote-friendly means offices exist, and remote workers can dial in. They're accommodated but not centered. Meetings happen in conference rooms with one remote person on a screen. Decisions happen in hallways.

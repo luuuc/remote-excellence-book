@@ -15,8 +15,6 @@ seo:
   keywords: async-first communication, response time expectations, deep work, remote communication policy, Slack etiquette, focus time
 ---
 
-# Stop Expecting Instant Replies
-
 Most communication doesn't need an immediate response.
 
 But most companies treat everything like it does. Ping. Reply. Ping. Reply. All day.

@@ -15,8 +15,6 @@ seo:
   keywords: emergency communication, urgent channel, synchronous communication, on-call policy, incident response, remote team alerts
 ---
 
-# Real-Time Is for Emergencies
-
 Reserve synchronous communication for what actually requires it.
 
 Production is down. A customer is furious. Someone's blocked and burning time. These are emergencies.

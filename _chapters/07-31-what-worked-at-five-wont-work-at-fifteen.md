@@ -15,8 +15,6 @@ seo:
   keywords: scaling remote teams, team growth challenges, startup scaling, remote team evolution, organizational change, growing pains
 ---
 
-# What Worked at Five Won't Work at Fifteen
-
 What works at five people won't work at fifteen.
 
 The informal coordination that felt effortless starts creating confusion. The single Slack channel becomes chaos. The weekly all-hands becomes unwieldy.

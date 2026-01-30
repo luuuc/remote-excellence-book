@@ -15,8 +15,6 @@ seo:
   keywords: trust-based management, new hire onboarding, employee trust, remote onboarding, default to trust, remote team culture
 ---
 
-# Trust Is the Default
-
 Don't make people earn trust. Start with it.
 
 Give new hires real responsibilities immediately. Full system access. Meaningful work. The message: we believe you're capable.
