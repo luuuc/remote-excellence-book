@@ -15,8 +15,6 @@ seo:
   keywords: offsite planning, company retreat agenda, unstructured time, team retreat activities, remote offsite tips, relationship building
 ---
 
-# Unschedule the Offsite
-
 You've flown everyone to Barcelona. Don't waste it on meetings.
 
 The temptation is to pack every hour. We're finally together! Let's do planning! Let's do retrospectives! Let's do workshops!
@@ -36,10 +34,12 @@ None of this happens when every slot is filled.
 - Everything else: open
 - No guilt about "wasting time"
 
+
 Trust that smart people in proximity will create value. They don't need an agenda to do it.
 
 
-> "Our best product idea in three years came from a conversation at 11pm in a hotel bar. It wasn't on any agenda. Two people just started talking. That's what offsites are for." — Product director, remote company
+> "Almost all of our dinners have assigned seating. We have a database that tracks whether people have met before, and at each dinner we try to seat you with three to five people you haven't met before."<br>
+> <small>— Matt Mullenweg, CEO of Automattic</small>
 
 
 **What deserves scheduled time:**

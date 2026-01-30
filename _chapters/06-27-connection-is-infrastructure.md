@@ -15,8 +15,6 @@ seo:
   keywords: remote team connection, virtual team building, remote loneliness, team bonding remote, social channels, optional team activities
 ---
 
-# Connection Is Infrastructure
-
 Remote work is lonely. Let's stop pretending otherwise.
 
 You don't bump into people. You don't overhear conversations. You don't share meals. The ambient human contact that offices provide for free disappears entirely.
@@ -32,6 +30,7 @@ So build it intentionally.
 - Team channels for non-work interests. The running club. The parents group. The music nerds.
 - Async check-ins that go beyond status updates. "What's one thing you're excited about this week?"
 
+
 **What doesn't work:**
 
 - Mandatory fun. The moment you require participation, you've killed the vibe.
@@ -40,10 +39,11 @@ So build it intentionally.
 - Over-engineering it. You're creating space, not running a program.
 
 
-> "We killed all mandatory social events. Participation in optional ones went up 40%. Turns out people actually wanted to connect—they just didn't want to be forced." — People lead, remote startup
+> "Connection is why we're here. We are hardwired to connect with others, it's what gives purpose and meaning to our lives."<br>
+> <small>— Brené Brown, *Daring Greatly*</small>
 
 
-The key word is optional. Create the spaces. Stock them with low-pressure activities. Then let people choose their level of participation.
+The key word is "optional". Create the spaces. Stock them with low-pressure activities. Then let people choose their level of participation.
 
 Some will show up to everything. Some will lurk. Some will skip it entirely. All of these are fine.
 
