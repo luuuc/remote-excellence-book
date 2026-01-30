@@ -1,17 +1,45 @@
 title: Remote Excellence
 description: >-
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Build distributed teams that thrive. A practical guide covering trust,
+  communication, tools, and scaling for remote-first organizations.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://remote-excellence.guide" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Author information
+author:
+  name: Luc B. Perussault-Diallo
+  twitter: lucdiallo
+  linkedin: luc-b-perussault-diallo-99525519
+
+# Social/SEO
+twitter_username: lucdiallo
+github_username: luuuc
+locale: en_US
+theme_color: "#1a1a2e"
+
+# Open Graph defaults
+og_image: /assets/images/remote-excellence-og.png
 
 collections:
   chapters:
     output: true
-
-twitter_username: lucdiallo
-github_username: luuuc
+    sort_by: order
+  chapters_v1:
+    output: true
+    permalink: /v1/:path/
 
 plugins:
   - jekyll-sitemap
+  - jekyll-feed
+
+# Include dot-directories (for .well-known)
+include:
+  - .well-known
+
+# Book metadata for AI parsing
+book:
+  published: "2025-05-15"
+  modified: "2026-01-30"
+  version: "2.0"
+  license: "https://creativecommons.org/licenses/by-sa/4.0/"
+  language: "en-US"

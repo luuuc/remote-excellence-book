@@ -1,16 +1,191 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>{{ page.title }} | Remote Excellence</title>
-{% if page.description %}
-<meta name="description" content="{{ page.seo.description }}" />
-{% endif %} {% if page.keywords %}
-<meta name="keywords" content="{{ page.seo.keywords }}" />
+<title>{{ page.title }} | {{ site.title }}</title>
+
+<!-- Description and Keywords -->
+{% assign meta_desc = page.seo.description | default: page.description | default: site.description %}
+{% if meta_desc %}
+<meta name="description" content="{{ meta_desc }}" />
 {% endif %}
+{% assign meta_keywords = page.seo.keywords | default: page.keywords %}
+{% if meta_keywords %}
+<meta name="keywords" content="{{ meta_keywords }}" />
+{% endif %}
+
+<!-- Author -->
+<meta name="author" content="{{ site.author.name }}" />
+<link rel="author" href="https://www.linkedin.com/in/{{ site.author.linkedin }}" />
+
+<!-- Robots -->
+<meta name="robots" content="index, follow" />
+
+<!-- Theme Color (browser UI on mobile) -->
+<meta name="theme-color" content="{{ site.theme_color | default: '#1a1a2e' }}" />
+
+<!-- Open Graph (Facebook, LinkedIn) -->
+<meta property="og:site_name" content="{{ site.title }}" />
+<meta property="og:title" content="{{ page.title }}" />
+<meta property="og:description" content="{{ page.seo.description | default: page.description | default: site.description }}" />
+<meta property="og:url" content="{{ page.url | absolute_url | replace:'.html','' }}" />
+<meta property="og:type" content="{% if page.layout == 'chapter' %}article{% else %}website{% endif %}" />
+<meta property="og:locale" content="{{ site.locale | default: 'en_US' }}" />
+<meta property="og:image" content="{{ page.og_image | default: site.og_image | absolute_url }}" />
+
+<!-- Article-specific Open Graph (for chapters) -->
+{% if page.layout == 'chapter' %}
+<meta property="article:author" content="https://www.linkedin.com/in/{{ site.author.linkedin }}" />
+<meta property="article:section" content="{{ page.part }}" />
+<meta property="article:published_time" content="{{ site.book.published }}" />
+<meta property="article:modified_time" content="{{ site.book.modified }}" />
+{% endif %}
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@{{ site.twitter_username }}" />
+<meta name="twitter:creator" content="@{{ site.twitter_username }}" />
+<meta name="twitter:title" content="{{ page.title }}" />
+<meta name="twitter:description" content="{{ page.seo.description | default: page.description | default: site.description }}" />
+<meta name="twitter:image" content="{{ page.og_image | default: site.og_image | absolute_url }}" />
+
+<!-- Structured Data (JSON-LD) - Main Content -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "{% if page.layout == 'chapter' %}Article{% else %}WebSite{% endif %}",
+  "name": "{{ page.title | escape }}",
+  "headline": "{{ page.title | escape }}",
+  "description": "{{ page.seo.description | default: page.description | default: site.description | escape }}",
+  "url": "{{ page.url | absolute_url | replace:'.html','' }}",
+  "inLanguage": "{{ site.book.language | default: 'en-US' }}",
+  "datePublished": "{{ site.book.published }}",
+  "dateModified": "{{ site.book.modified }}",
+  {% if page.layout == 'chapter' and page.metadata.reading_time_in_minutes %}
+  "timeRequired": "PT{{ page.metadata.reading_time_in_minutes }}M",
+  {% endif %}
+  "author": {
+    "@type": "Person",
+    "name": "{{ site.author.name }}",
+    "url": "https://www.linkedin.com/in/{{ site.author.linkedin }}"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "{{ site.author.name }}"
+  },
+  "license": "{{ site.book.license }}",
+  "isAccessibleForFree": true,
+  "isPartOf": {
+    "@type": "Book",
+    "name": "{{ site.title }}",
+    "author": {
+      "@type": "Person",
+      "name": "{{ site.author.name }}"
+    },
+    "bookFormat": "https://schema.org/EBook",
+    "inLanguage": "{{ site.book.language | default: 'en-US' }}",
+    "license": "{{ site.book.license }}"
+  }
+  {% if page.layout == 'chapter' %},
+  "articleSection": "{{ page.part }}",
+  "position": {{ page.order }}
+  {% endif %}
+}
+</script>
+
+<!-- Structured Data (JSON-LD) - Breadcrumb -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "{{ site.title }}",
+      "item": "{{ site.url }}"
+    }
+    {% if page.layout == 'chapter' %},
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ page.part }}",
+      "item": "{{ site.url }}/#{{ page.part | slugify }}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{ page.title | escape }}",
+      "item": "{{ page.url | absolute_url | replace:'.html','' }}"
+    }
+    {% elsif page.title != site.title %},
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ page.title | escape }}",
+      "item": "{{ page.url | absolute_url | replace:'.html','' }}"
+    }
+    {% endif %}
+  ]
+}
+</script>
+
+<!-- Structured Data (JSON-LD) - Book (on homepage only) -->
+{% if page.layout == 'home' or page.url == '/' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Book",
+  "name": "{{ site.title }}",
+  "description": "{{ site.description | escape }}",
+  "url": "{{ site.url }}",
+  "inLanguage": "{{ site.book.language | default: 'en-US' }}",
+  "datePublished": "{{ site.book.published }}",
+  "dateModified": "{{ site.book.modified }}",
+  "bookFormat": "https://schema.org/EBook",
+  "isAccessibleForFree": true,
+  "license": "{{ site.book.license }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ site.author.name }}",
+    "url": "https://www.linkedin.com/in/{{ site.author.linkedin }}",
+    "sameAs": [
+      "https://twitter.com/{{ site.twitter_username }}",
+      "https://github.com/{{ site.github_username }}"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "{{ site.author.name }}"
+  },
+  "hasPart": [
+    {% for chapter in site.chapters %}
+    {
+      "@type": "Chapter",
+      "name": "{{ chapter.title | escape }}",
+      "url": "{{ chapter.url | absolute_url | replace:'.html','' }}",
+      "position": {{ chapter.order }}
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
+{% endif %}
+
+<!-- Stylesheets -->
 <link rel="stylesheet" href="/assets/stylesheets/style.css" />
+
+<!-- Favicons -->
 <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
 <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
 <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="Remote Excellence" />
+<meta name="apple-mobile-web-app-title" content="{{ site.title }}" />
 <link rel="manifest" href="/assets/favicons/site.webmanifest" />
-<link rel="canonical" href="{{ page.url | absolute_url  | replace:'.html','' }}" />
+
+<!-- Canonical URL -->
+<link rel="canonical" href="{{ page.url | absolute_url | replace:'.html','' }}" />
+
+<!-- RSS Feed -->
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | absolute_url }}" />
+
+<!-- Machine-readable book structure -->
+<link rel="alternate" type="application/json" title="Book Structure" href="{{ '/book.json' | absolute_url }}" />

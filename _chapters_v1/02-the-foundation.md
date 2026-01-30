@@ -166,7 +166,6 @@ Begin every relationship assuming people are capable and well-intentioned.
 1. Assume competence and good intentions from day one
 2. Give meaningful responsibilities early rather than earning them over time
 3. Address specific issues if they arise rather than implementing blanket restrictions
-4. Create safety for appropriate vulnerability and authenticity
 
 ## Implement Trust Scaffolding
 Build lightweight systems that support autonomy while providing necessary guardrails.
@@ -175,20 +174,22 @@ Build lightweight systems that support autonomy while providing necessary guardr
 2. Create clear escalation paths for when help is needed
 3. Develop explicit decision authority guidelines
 4. Build processes that support autonomy with appropriate constraints
+5. Document trust decisions and their outcomes to build institutional learning
 
 ## Model Trust Behaviors as Leaders
 Show the vulnerability and accountability you want to see from your team.
 
-1. Demonstrate vulnerability about your own challenges and mistakes
+1. Demonstrate vulnerability about your own challenges and mistakes, acknowledging when you don't have answers
 2. Respect boundaries around working hours and availability
-3. Acknowledge when you don't have answers
-4. Hold yourself accountable to the same standards you expect from others
+3. Hold yourself accountable to the same standards you expect from others
+4. Celebrate team members who demonstrate trust-building behaviors
+
 
 {% include callout/example.html content="When onboarding new remote team members, instead of starting with restricted permissions and limited responsibilities that gradually expand (the traditional low-trust model), try providing full access to systems and meaningful work immediately, with appropriate guidance and support. This signals your trust and typically leads to faster integration and higher engagement. The rare cases where this trust is misplaced are far outweighed by the benefits of treating team members as capable professionals from day one." %}
 
 This approach embodies the principle of 'optimize for developer happiness' by creating an environment where people feel valued and trusted, which in turn leads to higher performance and commitment.
 
-# Moving Forward {#chapter-2-7}
+# Chapter Wrap Up {#chapter-2-7}
 
 ## Definition of Done
 
