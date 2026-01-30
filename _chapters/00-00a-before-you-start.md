@@ -1,0 +1,52 @@
+---
+layout: chapter
+title: "Before You Start"
+part: "Before You Start"
+order: 1
+metadata:
+  principle: 00a
+  reading_time_in_minutes: 2
+categories:
+  - fundamentals
+  - leadership
+  - strategy
+seo:
+  description: An opinionated guide for founders and leaders building remote-first companies. No hedging, no "it depends" - just battle-tested principles for distributed teams that actually work.
+  keywords: remote work book, remote-first guide, distributed team leadership, remote company founders, hybrid work alternative
+---
+
+# Before You Start
+
+This book is not balanced.
+
+We're not going to present "both sides" of remote work. We're not going to hedge with "it depends" and "results may vary." We've run remote teams. We've seen what works. We have opinions.
+
+Some of those opinions will make you uncomfortable. Good.
+
+**This book is for:**
+- Founders building remote-first companies
+- Leaders trying to fix broken distributed teams
+- Managers who suspect their current approach isn't working
+- Anyone tired of pretending hybrid is the answer
+
+**This book is not for:**
+- People looking for permission to keep doing what they're doing
+- Companies that want remote to feel exactly like the office
+- Managers who need to see butts in seats to feel in control
+
+We're going to tell you that most of what passes for "remote work" is actually office work done badly from home. We're going to tell you that your daily standups are a waste of time. We're going to tell you that your tracking software is an admission of failure.
+
+If that bothers you, this isn't your book.
+
+If it excites you, keep reading.
+
+
+**How to read this:**
+
+Each chapter is short. Read them in order, or skip around. Dog-ear the ones that resonate. Argue with the ones that don't.
+
+But don't just read. Do something. Change one thing Monday morning. Then another. Then another.
+
+Remote excellence isn't a destination. It's a practice.
+
+Let's begin.
