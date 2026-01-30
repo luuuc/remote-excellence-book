@@ -1,106 +1,84 @@
 # Remote Excellence
 
-A practical playbook for building distributed teams that thrive through trust, intentional communication, and human connection while embracing technical simplicity.
+A practical guide for building distributed teams that actually work.
 
-## 🚀 About This Project
+## About
 
-**Remote Excellence** is a comprehensive, open-source guide for building world-class distributed teams. Based on 20+ years of real-world experience leading remote organizations across continents, this book provides battle-tested frameworks and practical implementation steps for creating remote-first cultures that outperform traditional office-based teams.
+Most companies treat remote work as an accommodation. The best treat it as a system. This book shows you how to build the latter.
 
-Most companies treat remote work as an accommodation. The best treat it as a superpower. This guide shows you how to build the latter.
+Based on 20+ years leading remote teams across continents. No theory. No fluff. Just what works.
 
-## 📖 What's Inside
+## What's Inside
 
-The **Remote Excellence Framework** covers 8 interconnected principles:
+37 chapters across 9 sections:
 
-1. **Trust** as your operating system
-2. **Communication architecture** designed for async-first
-3. **Tech stack** that enables rather than frustrates
-4. **Methodologies** adapted for distributed environments
-5. **Remote-first commitment** that shapes everything
-6. **Scaling practices** that grow with your team
-7. **Authentic culture** where people bring their whole selves
-8. **Meaningful gatherings** that strengthen connection
+- **Before You Start** — Why this matters
+- **The Foundation** — Trust as your operating system
+- **Communication** — Async-first, meetings-last
+- **Tools** — Less is more
+- **Remote-First** — Commit fully or don't bother
+- **Hiring** — Writers over talkers
+- **Connection** — Humans first
+- **Scaling** — What changes as you grow
+- **Environment** — Let people work their way
 
-Every strategy has been forged through real experience building companies across continents. No theory. No fluff. Just what actually works when the stakes are high.
-
-## 🌐 Read Online
+## Read Online
 
 The complete book is freely available at **[remote-excellence.guide](https://remote-excellence.guide)**
 
-## 📄 License
+## Previous Edition
 
-This work is licensed under [Creative Commons BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). You're free to:
+The first edition took a different approach—eight broad principles instead of focused chapters. This edition breaks those principles into 37 actionable pieces.
 
-- **Share** — copy and redistribute the material
-- **Adapt** — remix, transform, and build upon the material
-- **Commercial use** — use for any purpose, even commercially
+→ [Read the original edition](https://remote-excellence.guide/v1/01-introduction/)
 
-Just provide attribution and share derivatives under the same license.
+## License
 
-## 🛠 Built With
+This work is licensed under [Creative Commons BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Share it, adapt it, use it commercially. Just provide attribution and share derivatives under the same license.
 
-- [Jekyll](https://jekyllrb.com/) - Static site generator
-- [GitHub Pages](https://pages.github.com/) - Hosting
-- [Markdown](https://daringfireball.net/projects/markdown/) - Content format
+## Built With
 
-## 🤝 Contributing
+- [Jekyll](https://jekyllrb.com/) — Static site generator
+- [GitHub Pages](https://pages.github.com/) — Hosting
+- [Markdown](https://daringfireball.net/projects/markdown/) — Content format
 
-We welcome contributions! Here's how you can help:
+## Contributing
 
-- **Submit improvements** via pull requests
-- **Report issues** or suggest additions
-- **Share implementation stories** in [Discussions](https://github.com/luuuc/remote-excellence-book/discussions)
-- **Contribute translations** or case studies
-- **Fork the project** for your own adaptations
+- Submit improvements via pull requests
+- Report issues or suggest additions
+- Share implementation stories in [Discussions](https://github.com/luuuc/remote-excellence-book/discussions)
+- Fork the project for your own adaptations
 
 ### Development Setup
 
 ```bash
-# Clone the repository
 git clone https://github.com/luuuc/remote-excellence-book.git
 cd remote-excellence-book
-
-# Install dependencies
 bundle install
-
-# Run local development server
 bundle exec jekyll serve
-
 # Visit http://localhost:4000
 ```
 
-## 💬 Community
+## Community
 
-- **Questions & Discussions**: [GitHub Discussions](https://github.com/luuuc/remote-excellence-book/discussions)
+- **Questions**: [GitHub Discussions](https://github.com/luuuc/remote-excellence-book/discussions)
 - **LinkedIn**: [Luc B. Perussault-Diallo](https://www.linkedin.com/in/luc-b-perussault-diallo-99525519)
-- **Issues**: Use GitHub Issues for bug reports and feature requests
+- **Issues**: GitHub Issues for bugs and feature requests
 
-## ☕ Support the Project
+## Support
 
-If you find value in this guide, consider supporting its continued development:
+If this guide helps you, consider supporting its development:
 
-- ☕ **[Buy me a coffee](https://ko-fi.com/luuuc)** - Quick support and motivation
-- 📖 **[Ebook version](https://www.amazon.com/dp/B0FCCGYCF8)** - Formatted ePub and PDF for easier reading
-- `coming soon` 📚 **[Paperback edition](#)** - Physical copy for your bookshelf
+- [Buy me a coffee](https://ko-fi.com/luuuc)
+- [Ebook version](https://www.amazon.com/dp/B0FCCGYCF8) — ePub and PDF for easier reading
 
-Your support helps maintain this free resource and fund new content development.
+## Who This Is For
 
-## 🎯 Who This Is For
-
-- **Technical founders** building their first distributed team
-- **Engineering leaders** transitioning from co-located to remote environments
-- **CTOs and VPs** scaling remote operations
-- **Team leads** managing day-to-day remote collaboration
-
-Whether you're just beginning your remote journey or looking to level up an existing distributed organization, you'll find actionable approaches that address your specific challenges.
-
-## 🚀 Next Steps
-
-1. **Read the guide** at [remote-excellence.guide](https://remote-excellence.guide)
-2. **Start with trust** - establish your foundation first
-3. **Join the community** - share your journey and learn from others
-4. **Contribute back** - help improve the guide for future readers
+- Technical founders building their first distributed team
+- Engineering leaders transitioning to remote
+- CTOs scaling remote operations
+- Team leads managing daily remote collaboration
 
 ---
 
-**Built with ❤️ for the global remote work community**
+Built for the global remote work community.

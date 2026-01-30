@@ -11,32 +11,30 @@ seo:
   keywords: remote work, distributed teams, remote management, async communication, remote leadership, team scaling, remote culture, trust building, remote-first
 
 title: Remote Excellence
-description: A practical playbook for building distributed teams that thrive through trust, intentional communication, and human connection while embracing technical simplicity.
+description: The calmer, clearer, more focused way to run remote teams
 ---
 
-> “Most companies treat remote work as an accommodation. The best treat it as a superpower.”
+> "Remote work isn't a policy. It's a system."
 
-This playbook shows you how to build the latter: distributed teams that move faster, adapt quicker, and access global talent while creating environments where people do their genuinely best work.
+  Most companies treat remote like a benefit. Remote done right is a competitive advantage. This book is about the
+  system.
 
-# The Remote Excellence Framework
+  # 37 Chapters on Remote Excellence
 
-**8 interconnected principles** that together create a comprehensive approach to distributed team building:
+  **9 parts** on building distributed teams that work:
 
-1. **Trust** as your operating system
-2. **Communication architecture** designed for async-first
-3. **Tech stack** that enables rather than frustrates
-4. **Methodologies** adapted for distributed environments
-5. **Remote-first commitment** that shapes everything
-6. **Scaling practices** that grow with your team
-7. **Authentic culture** where people bring their whole selves
-8. **Meaningful gatherings** that strengthen connection
+  1. **The Foundation** — Trust, autonomy, and why tracking software is a failure
+  2. **Communication** — Writing, async-first design, and why meetings are toxic
+  3. **Tools** — Every tool is a tax, and your tools shape your culture
+  4. **Remote-First** — Why "remote-friendly" is a lie
+  5. **Hiring** — Hire writers, not babysitters
+  6. **Connection** — Humans first, functions second
+  7. **Scaling** — What worked at five won't work at fifteen
+  8. **Environment** — Buy them a damn chair
+  9. **Conclusion** — What we believe
 
-# Battle-Tested Approaches
+  # No Fluff
 
-Every strategy has been forged through real experience building companies across continents. You'll find practical implementation steps, specific examples, and frameworks you can adapt immediately.
+  Short chapters. Strong opinions.
 
-No theory. No fluff. Just what actually works when the stakes are high.
-
-# Start Your Journey
-
-Remote work, done thoughtfully, unlocks capabilities traditional teams struggle to match. Your competitive advantage begins with getting the foundation right.
+  Remote done wrong is isolation, miscommunication, and slow death by video call.
