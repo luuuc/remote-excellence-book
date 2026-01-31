@@ -23,6 +23,11 @@ This is normal. Systems need to evolve.
 
 Watch for the signals: Information gets lost. Decisions take too long. People don't know what others are doing. New hires struggle to ramp up.
 
-When you see these, adapt. Add structure. Create team boundaries. Formalize what was informal.
+When you see these, adapt.<br>
+Add structure.<br>
+Create team boundaries.<br>
+Formalize what was informal.
 
-Don't resist the evolution. The practices that built your early success need to change to sustain your later success.
+Don't resist the evolution.
+
+The practices that built your early success need to change to sustain your later success.

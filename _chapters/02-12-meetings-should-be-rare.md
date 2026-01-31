@@ -28,11 +28,12 @@ When you do meet, make it count. Agenda in advance. Decisions recorded after. No
 
 **The math of meetings:**
 
-A one-hour meeting with 8 people isn't one hour. It's eight hours of your company's time, plus the context-switching cost for everyone before and after.
+A one-hour meeting with 8 people isn't one hour. It's eight hours of your company's time, plus the context-switching cost for everyone before and after.<sup>[↗](09-42-go-deeper.html#calm)</sup>
 
 That meeting needs to create at least eight hours of value. Most don't come close.
 
-Remote teams that meet constantly are usually compensating for poor written communication. Fix the writing. The meetings will decrease.
+Remote teams that meet constantly are usually compensating for poor written communication.
 
-<br>
-<small>*See [It Doesn't Have to Be Crazy at Work](https://basecamp.com/books/calm) by Jason Fried & DHH.*</small>
+Fix the writing.
+
+The meetings will decrease.

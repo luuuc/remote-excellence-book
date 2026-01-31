@@ -21,7 +21,7 @@ Remote-friendly means offices exist, and remote workers can dial in. They're acc
 
 Remote-first means everything is designed for distributed work. Even people in the same city communicate as if they weren't. Meetings are everyone-on-video or async. Documentation is the default.
 
-Remote-friendly creates two classes of employee. Remote-first creates one.
+Remote-friendly creates two classes of employee. Remote-first creates one.<sup>[↗](09-42-go-deeper.html#gitlab)</sup>
 
 If you have an office and remote workers, you're probably remote-friendly.
 
@@ -30,6 +30,3 @@ That's a problem.
 Commit to remote-first or go back to the office.
 
 The middle ground serves no one well.
-
-<br>
-<small>*See GitLab's [Remote Playbook](https://handbook.gitlab.com/handbook/company/culture/all-remote/).*</small>

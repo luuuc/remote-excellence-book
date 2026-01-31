@@ -21,16 +21,16 @@ These books shaped the thinking:
 **Remote: Office Not Required** — Jason Fried & David Heinemeier Hansson
 <br><small>The book that brought remote work mainstream. Still essential. [basecamp.com/books](https://basecamp.com/books#remote)</small>
 
-**It Doesn't Have to Be Crazy at Work** — Jason Fried & David Heinemeier Hansson
+<a id="calm"></a>**It Doesn't Have to Be Crazy at Work** — Jason Fried & David Heinemeier Hansson
 <br><small>On calm companies, async communication, and protecting deep work. [basecamp.com/books](https://basecamp.com/books#calm)</small>
 
 **Rework** — Jason Fried & David Heinemeier Hansson
 <br><small>Contrarian business wisdom. Short chapters, strong opinions. A stylistic influence on this book. [basecamp.com/books](https://basecamp.com/books#rework)</small>
 
-**The GitLab Handbook** — GitLab
+<a id="gitlab"></a>**The GitLab Handbook** — GitLab
 <br><small>3,000+ pages of documented remote-first practices. Free, public, comprehensive. [handbook.gitlab.com](https://handbook.gitlab.com)</small>
 
-**No Rules Rules** — Reed Hastings & Erin Meyer
+<a id="norules"></a>**No Rules Rules** — Reed Hastings & Erin Meyer
 <br><small>Netflix's culture of freedom and responsibility. The source of "highly aligned, loosely coupled." [norulesrules.com](https://www.norulesrules.com)</small>
 
 **Deep Work** — Cal Newport

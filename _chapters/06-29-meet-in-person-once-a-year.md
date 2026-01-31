@@ -48,4 +48,8 @@ Bring partners and families if you can. People remember "the trip where the kids
 
 Invest in good food. Shared meals are where relationships form.
 
-Don't cheap out. This is the one time you're all together. Make it memorable.
+Don't cheap out.
+
+This is the one time you're all together.
+
+Make it memorable.

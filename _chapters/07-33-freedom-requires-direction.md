@@ -23,13 +23,19 @@ Everyone moving in different directions isn't productive. It's entropy. You need
 
 Create that alignment explicitly.
 
-Clear goals. Clear priorities. Clear decision-making frameworks. Then let people loose.
+Clear goals.<br>
+Clear priorities.<br>
+Clear decision-making frameworks.
+
+Then let people loose.
 
 The more aligned people are on direction, the more autonomous they can be on execution.
 
-This isn't a paradox. It's the whole point. Strong alignment enables strong autonomy. Weak alignment requires constant coordination.
+This isn't a paradox.
+
+It's the whole point.
+
+Strong alignment enables strong autonomy.<br>
+Weak alignment requires constant coordination.<sup>[↗](09-42-go-deeper.html#norules)</sup>
 
 Invest in alignment. It pays dividends in speed.
-
-<br>
-<small>*See [No Rules Rules](https://www.norulesrules.com/) by Reed Hastings & Erin Meyer.*</small>
