@@ -7,7 +7,7 @@ categories:
   - distributed-teams
 
 seo:
-  description: Build distributed teams that thrive. Practical guide covering trust, communication, tech stack, and scaling for remote-first organizations. Battle-tested approaches from 20+ years experience.
+  description: The calmer, clearer, more focused way to run remote teams
   keywords: remote work, distributed teams, remote management, async communication, remote leadership, team scaling, remote culture, trust building, remote-first
 
 title: Remote Excellence
