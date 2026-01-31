@@ -18,7 +18,7 @@ seo:
 
 This book is not balanced.
 
-We're not going to present "both sides" of remote work. We're not going to hedge with "it depends" and "results may vary." We've run remote teams. We've seen what works. We have opinions.
+I'm not going to present "both sides" of remote work or hedge with "it depends" and "results may vary." I've run remote teams. I've seen what works. I have opinions.
 
 Some of those opinions will make you uncomfortable. Good.
 
@@ -36,7 +36,8 @@ Some of those opinions will make you uncomfortable. Good.
 - Managers who need to see butts in seats to feel in control
 
 <br>
-We're going to tell you that most of what passes for "remote work" is actually office work done badly from home. We're going to tell you that your daily standups are a waste of time. We're going to tell you that your tracking software is an admission of failure.
+I'm going to tell you that most of what passes for "remote work" is actually office work done badly from home. I'm going to tell you that your daily standups are a waste of time.
+I'm going to tell you that your tracking software is an admission of failure.
 
 If that bothers you, this isn't your book.
 
