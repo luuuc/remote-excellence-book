@@ -15,7 +15,7 @@ seo:
   keywords: documentation culture, written communication, remote documentation, async communication, decision documentation, remote team processes
 ---
 
-> Writing isn't overhead. It's the work.
+Writing isn't overhead. It's the work.
 
 This is the foundational rule of remote work. Verbal agreements evaporate. Slack threads get buried. Meeting decisions disappear.
 
