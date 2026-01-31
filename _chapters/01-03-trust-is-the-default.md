@@ -25,4 +25,4 @@ That's the wrong signal. It says: we're watching. We're waiting for you to fail.
 
 The rare person who betrays trust will reveal themselves either way. But the approach you take shapes everyone else's experience.
 
-Default to trust. Adjust if needed.
+Default to trust.
