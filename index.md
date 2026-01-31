@@ -34,4 +34,6 @@ Most companies treat remote like a benefit. Remote done right is a competitive a
 9. **Conclusion**<br>What we believe
 
 <br>
+This is how to not screw it up.
+
 Short chapters. Strong opinions.
