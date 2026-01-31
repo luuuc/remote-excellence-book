@@ -11,8 +11,8 @@ categories:
   - strategy
   - resources
 seo:
-  description: Async over sync. Outcomes over hours. Trust over surveillance. Remote isn't a compromise - it's how the best work gets done. Your Monday morning action plan starts here.
-  keywords: remote work manifesto, remote principles, async-first, outcomes over hours, remote work action plan, building remote culture
+  description: Build a real system, not a policy document. How decisions get made, how information flows, how work happens. Write it down, refine constantly, then get out of the way.
+  keywords: remote work system design, decision-making frameworks, information flow, remote operations, building remote infrastructure
 ---
 
 Build it.

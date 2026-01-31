@@ -11,8 +11,8 @@ categories:
   - strategy
   - resources
 seo:
-  description: Async over sync. Outcomes over hours. Trust over surveillance. Remote isn't a compromise - it's how the best work gets done. Your Monday morning action plan starts here.
-  keywords: remote work manifesto, remote principles, async-first, outcomes over hours, remote work action plan, building remote culture
+  description: The remote work manifesto - async over sync, outcomes over hours, trust over surveillance. These are the core beliefs that define excellent distributed teams.
+  keywords: remote work manifesto, remote principles summary, async-first beliefs, distributed team values, remote work philosophy
 ---
 
 Async over sync.<br>
