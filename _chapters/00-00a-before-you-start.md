@@ -36,8 +36,10 @@ Some of those opinions will make you uncomfortable. Good.
 - Managers who need to see butts in seats to feel in control
 
 <br>
-I'm going to tell you that most of what passes for "remote work" is actually office work done badly from home.<br>
-I'm going to tell you that your daily standups are a waste of time.<br>
+I'm going to tell you that most of what passes for "remote work" is actually office work done badly from home.
+
+I'm going to tell you that your daily standups are a waste of time.
+
 I'm going to tell you that your tracking software is an admission of failure.
 
 If that bothers you, this isn't your book.
