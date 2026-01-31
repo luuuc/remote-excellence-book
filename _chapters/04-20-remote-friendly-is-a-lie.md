@@ -30,3 +30,6 @@ That's a problem.
 Commit to remote-first or go back to the office.
 
 The middle ground serves no one well.
+
+<br><br>
+<small>*GitLab has been a leading voice on the remote-first vs. remote-friendly distinction.*</small>

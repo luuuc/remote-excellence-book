@@ -35,8 +35,8 @@ Neither is right or wrong. But choose consciously.
 The tool you choose for daily communication will shape your culture more than any manifesto or handbook.
 
 
-> "We shape our tools and thereafter our tools shape us."<br>
-> <small>— John Culkin</small>
+> "We shape our tools and thereafter they shape us."<br>
+> <small>— John Culkin, on Marshall McLuhan (1967)</small>
 
 <br>
 **Watch out for:**
