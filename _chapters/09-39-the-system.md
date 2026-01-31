@@ -1,10 +1,10 @@
 ---
 layout: chapter
-title: "What We Believe"
+title: "The System"
 part: "Conclusion"
-order: 937
+order: 939
 metadata:
-  principle: 37
+  principle: 39
   reading_time_in_minutes: 1
 categories:
   - implementation
@@ -15,14 +15,12 @@ seo:
   keywords: remote work manifesto, remote principles, async-first, outcomes over hours, remote work action plan, building remote culture
 ---
 
-Async over sync.<br>
-Outcomes over hours.<br>
-Trust over surveillance.<br>
-Writing over meetings.<br>
-Small teams over large ones.<br>
-Global talent over local limits.<br>
-Connection over isolation.<br>
-Systems over heroics.
+Build it.
 
-Remote isn't a compromise.<br>
-It's how the best work gets done.
+Not a policy document that lives in a wiki and nobody reads. A real system. How decisions get made. How information flows. How people know what's expected. How work actually happens.
+
+Write it down. Refine it constantly. Question everything regularly.
+
+Trust your people to operate within it.
+
+Then get out of the way.
