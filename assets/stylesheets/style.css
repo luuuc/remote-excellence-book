@@ -333,6 +333,13 @@ body {
 .content a:hover {
   color: #253951;
 }
+
+sup a {
+  text-decoration: none;
+  font-size: 1.15rem;
+  padding: 0 0.2rem;
+}
+
 .content .callout {
   padding: 20px;
   margin: 20px 0;
