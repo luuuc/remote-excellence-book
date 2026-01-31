@@ -14,24 +14,26 @@ title: Remote Excellence
 description: The calmer, clearer, more focused way to run remote teams
 ---
 
-> "Remote work isn't a policy. It's a system."
+Remote work isn't a policy. It's a system.
 
 Most companies treat remote like a benefit. Remote done right is a competitive advantage. This book is about the system.
 
-# 37 Chapters on Remote Excellence
+<br>
+# 4 Principles on Remote Excellence
 
 **9 parts** on building distributed teams that work:
 
-1. **The Foundation** — Trust, autonomy, and why tracking software is a failure
-2. **Communication** — Writing, async-first design, and why meetings are toxic
-3. **Tools** — Every tool is a tax, and your tools shape your culture
-4. **Remote-First** — Why "remote-friendly" is a lie
-5. **Hiring** — Hire writers, not babysitters
-6. **Connection** — Humans first, functions second
-7. **Scaling** — What worked at five won't work at fifteen
-8. **Environment** — Buy them a damn chair
-9. **Conclusion** — What we believe
+1. **The Foundation**<br>Trust, autonomy, and why tracking software is a failure
+2. **Communication**<br>Writing, async-first design, and why meetings are toxic
+3. **Tools**<br>Every tool is a tax, and your tools shape your culture
+4. **Remote-First**<br>Why "remote-friendly" is a lie
+5. **Hiring**<br>Hire writers, not babysitters
+6. **Connection**<br>Humans first, functions second
+7. **Scaling**<br>What worked at five won't work at fifteen
+8. **Environment**<br>Buy them a damn chair
+9. **Conclusion**<br>What we believe
 
+<br>
 # No Fluff
 
 Short chapters. Strong opinions.
