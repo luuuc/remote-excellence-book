@@ -1,10 +1,11 @@
 ---
 layout: chapter
 title: "Monday Morning"
+show_chapter_number: false
 part: "Conclusion"
-order: 938
+order: 939
 metadata:
-  principle: 38
+  principle: 00
   reading_time_in_minutes: 1
 categories:
   - implementation

@@ -1,10 +1,11 @@
 ---
 layout: chapter
 title: "The Work"
+show_chapter_number: false
 part: "Conclusion"
-order: 940
+order: 941
 metadata:
-  principle: 40
+  principle: 00
   reading_time_in_minutes: 1
 categories:
   - implementation
@@ -24,12 +25,7 @@ That's the prize.
 Build the system that protects it.
 
 <br>
-Now go.
+<br>
+Monday morning. Quiet house. Hot coffee. Three hours before anyone expects a reply.
 
-Not tomorrow. Today.
-
-One change. One decision. One message to your team.
-
-The best remote cultures weren't designed in a retreat. They were built one small choice at a time, by people who decided the status quo wasn't good enough.
-
-Your turn.
+That's the system working.

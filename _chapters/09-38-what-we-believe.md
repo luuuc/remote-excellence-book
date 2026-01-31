@@ -1,10 +1,11 @@
 ---
 layout: chapter
 title: "What We Believe"
+show_chapter_number: false
 part: "Conclusion"
-order: 937
+order: 938
 metadata:
-  principle: 37
+  principle: 00
   reading_time_in_minutes: 1
 categories:
   - implementation
