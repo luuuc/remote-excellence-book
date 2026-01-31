@@ -180,6 +180,28 @@
 </script>
 {% endif %}
 
+<!-- Structured Data (JSON-LD) - FAQPage -->
+{% if page.faq_schema and page.faq_items %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {% for item in page.faq_items %}
+    {
+      "@type": "Question",
+      "name": {{ item.question | jsonify }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ item.answer | jsonify }}
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
+{% endif %}
+
 <!-- Stylesheets -->
 <link rel="stylesheet" href="/assets/stylesheets/style.css" />
 
