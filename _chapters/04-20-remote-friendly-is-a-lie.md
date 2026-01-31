@@ -31,5 +31,5 @@ Commit to remote-first or go back to the office.
 
 The middle ground serves no one well.
 
-<br><br>
-<small>*GitLab has been a leading voice on the remote-first vs. remote-friendly distinction.*</small>
+<br>
+<small>*See GitLab's [Remote Playbook](https://handbook.gitlab.com/handbook/company/culture/all-remote/).*</small>

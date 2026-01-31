@@ -31,5 +31,5 @@ This isn't a paradox. It's the whole point. Strong alignment enables strong auto
 
 Invest in alignment. It pays dividends in speed.
 
-<br><br>
-<small>*Netflix's culture of "highly aligned, loosely coupled" teams informed this principle.*</small>
+<br>
+<small>*See [No Rules Rules](https://www.norulesrules.com/) by Reed Hastings & Erin Meyer.*</small>

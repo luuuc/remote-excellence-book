@@ -43,7 +43,7 @@ Feel free to:
 
 - Submit improvements
 - Report issues or suggest additions
-- Share your feedbacks
+- Share your feedback
 - Contribute translations or case studies
 
 ## Supporting the Project

@@ -34,5 +34,5 @@ That meeting needs to create at least eight hours of value. Most don't come clos
 
 Remote teams that meet constantly are usually compensating for poor written communication. Fix the writing. The meetings will decrease.
 
-<br><br>
-<small>*The "meeting math" concept was popularized by Jason Fried and Basecamp.*</small>
+<br>
+<small>*See [It Doesn't Have to Be Crazy at Work](https://basecamp.com/books/calm) by Jason Fried & DHH.*</small>
