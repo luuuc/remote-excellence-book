@@ -34,8 +34,6 @@ Most companies treat remote like a benefit. Remote done right is a competitive a
 9. **Conclusion**<br>What we believe
 
 <br>
-# No Fluff
-
-Short chapters. Strong opinions.
+No Fluff. Short chapters. Strong opinions.
 
 Remote done wrong is isolation, miscommunication, and slow death by video call.
