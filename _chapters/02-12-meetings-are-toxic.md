@@ -26,10 +26,6 @@ Before scheduling, ask: can this be a document? A Loom video? A written proposal
 When you do meet, make it count. Agenda in advance. Decisions recorded after. No meeting without an artifact.
 
 
-> "A single meeting can blow a whole afternoon, by breaking it into two pieces each too small to do anything hard in."<br>
-> <small>— Paul Graham, "Maker's Schedule, Manager's Schedule"</small>
-
-
 **The math of meetings:**
 
 A one-hour meeting with 8 people isn't one hour. It's eight hours of your company's time, plus the context-switching cost for everyone before and after.

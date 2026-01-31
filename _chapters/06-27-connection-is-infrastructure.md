@@ -39,9 +39,6 @@ So build it intentionally.
 - Social activities that favor extroverts. Not everyone wants to play games on Zoom.
 - Over-engineering it. You're creating space, not running a program.
 
-> "Connection is why we're here. We are hardwired to connect with others, it's what gives purpose and meaning to our lives."<br>
-> <small>— Brené Brown, *Daring Greatly*</small>
-
 <br>
 The key word is "optional". Create the spaces. Stock them with low-pressure activities. Then let people choose their level of participation.
 

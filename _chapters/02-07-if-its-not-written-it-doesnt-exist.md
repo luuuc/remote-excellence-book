@@ -30,10 +30,6 @@ Writing isn't overhead. It's the work.
 The discipline of writing forces clarity. If you can't write it simply, you don't understand it well enough. If others can't find it, it might as well not exist.
 
 
-> "The reason writing a good 4-page memo is harder than 'writing' a 20-page PowerPoint is because the narrative structure of a good memo forces better thought and better understanding."<br>
-> <small>— Jeff Bezos</small>
-
-
 **The test:** Can someone who joins in six months find and understand this decision? If not, it doesn't exist.
 
 Remote runs on written artifacts. Build that muscle.

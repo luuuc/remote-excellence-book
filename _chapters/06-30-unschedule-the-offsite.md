@@ -37,10 +37,6 @@ None of this happens when every slot is filled.
 <br>
 Trust that smart people in proximity will create value. They don't need an agenda to do it.
 
-
-> "Almost all of our dinners have assigned seating. We have a database that tracks whether people have met before, and at each dinner we try to seat you with three to five people you haven't met before."<br>
-> <small>— Matt Mullenweg, CEO of Automattic</small>
-
 <br>
 **What deserves scheduled time:**
 
