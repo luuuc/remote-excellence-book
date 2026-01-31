@@ -97,13 +97,10 @@ They'll add a thirteenth before consolidating.
 
 **The Presence Performer**
 
-Always online.
-
-First to respond.
-
-Last to log off.
-
-Green dot permanently lit.
+Always online.<br>
+First to respond.<br>
+Last to log off.<br>
+Green dot permanently lit.<br>
 
 Sends messages at midnight to demonstrate dedication.
 
