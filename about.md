@@ -14,45 +14,39 @@ title: About This Project
 description: Open Knowledge, Open Source
 ---
 
-This book is freely available here under the [Creative Commons BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) license.
+[Creative Commons BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Read it, steal from it, adapt it, share it. Just give credit and keep it open.
 
-This guide represents over 20 years of lessons learned from both sides of remote work, as a remote employee navigating distributed teams and as a leader building and scaling remote organizations across continents.
 
-The complete book, all templates, and implementation resources are accessible to everyone because knowledge should be free. You can read, implement, adapt, and redistribute this content as long as you provide attribution and share derivatives under the same license.
+I've been doing this for 20 years. Remote employee. Remote manager. Remote founder. I've made most of these mistakes myself.
 
-## Acknowledgments
+## Who shaped this thinking
 
-This book stands on the shoulders of pioneers who shaped how we think about remote work:
+**Basecamp** — Jason Fried and DHH wrote the books I wish I'd had earlier. *Remote*, *Rework*, *It Doesn't Have to Be Crazy at Work*. The DNA is obvious.
 
-**Basecamp (37signals)** — Jason Fried and David Heinemeier Hansson's work, including *Rework*, *Remote: Office Not Required*, and *It Doesn't Have to Be Crazy at Work*, fundamentally shaped the conversation about meetings, async communication, and calm work.
+**GitLab** — 3,000 pages of public handbook. They showed what "remote-first" actually looks like at scale.
 
-**GitLab** — Their public handbook and relentless documentation of remote-first practices set the standard for transparency and showed what "remote-first" actually means at scale.
+**Netflix** — "Highly aligned, loosely coupled." That phrase changed how I think about autonomy.
 
-**Netflix** — Their culture memo introduced concepts like "highly aligned, loosely coupled" that influenced how we think about autonomy and alignment.
+**Buffer** — Radical transparency before it was a buzzword. Honest about what doesn't work.
 
-**Buffer** — Joel Gascoigne and team pioneered radical transparency in remote culture, from public salaries to honest writing about what works and what doesn't.
+**Automattic** — Proof that 1,000+ people can work distributed. Not just survive. Thrive.
 
-**Automattic** — Matt Mullenweg and the WordPress.com team proved that a 1,000+ person company could thrive fully distributed.
-
-These organizations didn't just write about remote work — they lived it, documented it, and shared what they learned. This book synthesizes their insights with my own experience. Where specific concepts originated with them, I've noted it in the text.
+I took what they taught and mixed it with what I learned the hard way.
 
 ## Built in the Open
-This site is built with Jekyll and hosted on GitHub Pages. The entire source code, including all book content, is available in the [GitHub repository](https://github.com/luuuc/remote-excellence-book).
 
-Feel free to:
+Jekyll. GitHub Pages. [Source code here](https://github.com/luuuc/remote-excellence-book).
 
-- Submit improvements
-- Report issues or suggest additions
-- Share your feedback
-- Contribute translations or case studies
+Want to fix something? Submit a PR.<br>
+Have a question? [Open a discussion](https://github.com/luuuc/remote-excellence-book/discussions).<br>
+Want to translate it? Go for it.
 
-## Supporting the Project
-If you find value in this guide, you can support its continued development:
+## Support
 
-☕ **[Buy me a coffee](https://ko-fi.com/luuuc)** - Quick support and motivation
+If this helped, you can [buy me a coffee](https://ko-fi.com/luuuc).
 
-Your support helps maintain this free resource and fund new content development.
+Not required. But appreciated.
 
-## Get Involved
-1. **LinkedIn**: [Luc B. Perussault-Diallo](https://www.linkedin.com/in/luc-b-perussault-diallo-99525519)
-2. **Community**: Questions, participation, follow-ups, and implementation stories are highly welcomed in [GitHub Discussions](https://github.com/luuuc/remote-excellence-book/discussions)
+## Connect
+
+[LinkedIn](https://www.linkedin.com/in/luc-b-perussault-diallo-99525519)
