@@ -97,7 +97,7 @@
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    {% if page.layout == 'chapter' %}
+    {% if page.layout == 'chapter' and page.part %}
     {
       "@type": "ListItem",
       "position": 1,
@@ -115,7 +115,7 @@
       "position": 3,
       "name": "{{ page.title | escape }}"
     }
-    {% elsif page.title != site.title %}
+    {% elsif page.layout == 'chapter' or page.title != site.title %}
     {
       "@type": "ListItem",
       "position": 1,
