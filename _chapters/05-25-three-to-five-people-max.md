@@ -23,6 +23,6 @@ Remote amplifies this. Every additional person is more coordination, more contex
 
 Keep teams small. Three to five people is ideal. They can stay aligned without elaborate processes. They can make decisions without endless meetings.
 
-If a project needs more people, consider breaking it into smaller pieces with clear interfaces—not throwing more bodies at a single team.
+If a project needs more people, consider breaking it into smaller pieces with clear interfaces instead of throwing more bodies at a single team.
 
 Small teams are simpler. Simpler is faster.

@@ -17,7 +17,7 @@ seo:
 
 Your remote employees work from home. Make sure home works.
 
-A good chair. A proper desk. A monitor that doesn't strain their eyes. Reliable internet. These aren't perks—they're tools.
+A good chair. A proper desk. A monitor that doesn't strain their eyes. Reliable internet. These aren't perks. They're tools.
 
 You'd never ask an office worker to bring their own desk. Don't ask remote workers to subsidize their workspace.
 

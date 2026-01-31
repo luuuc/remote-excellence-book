@@ -23,6 +23,10 @@ Remote-first means everything is designed for distributed work. Even people in t
 
 Remote-friendly creates two classes of employee. Remote-first creates one.
 
-If you have an office and remote workers, you're probably remote-friendly. That's a problem.
+If you have an office and remote workers, you're probably remote-friendly.
 
-Commit to remote-first or go back to the office. The middle ground serves no one well.
+That's a problem.
+
+Commit to remote-first or go back to the office.
+
+The middle ground serves no one well.

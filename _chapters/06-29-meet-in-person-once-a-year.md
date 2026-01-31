@@ -15,7 +15,7 @@ seo:
   keywords: remote team retreat, annual company gathering, in-person meetup, remote team offsite, team retreat planning, distributed team meeting
 ---
 
-> Remote-first doesn't mean never meeting.
+Remote-first doesn't mean never meeting.
 
 Bring your team together in person at least once a year. This isn't optional. It's not a perk. It's essential infrastructure.
 
@@ -23,7 +23,7 @@ Bring your team together in person at least once a year. This isn't optional. It
 
 Video calls transmit information. In-person time builds relationships.
 
-There's something about sharing meals, walking together, staying up too late talking that video can't replicate. The inside jokes. The shared memories. The moment you realize your colleague is actually hilarious—something you never would have discovered over Zoom.
+There's something about sharing meals, walking together, staying up too late talking that video can't replicate. The inside jokes. The shared memories. The moment you realize your colleague is actually hilarious. Something you never would have discovered over Zoom.
 
 These relationships sustain remote collaboration for the other 50 weeks. When you've met someone, you read their messages differently. You assume good intent more easily. You pick up the phone when things are hard.
 
@@ -39,7 +39,7 @@ That's still cheaper than a month of office rent in most cities. And the return 
 > "I see the retreats as an essential part of the work we do together. If we would operate the company without these regular face-to-face gatherings, we would be less effective and feel less connected."<br>
 > — <small>Joel Gascoigne, CEO of Buffer</small>
 
-
+<br>
 **Make it count:**
 
 Pick somewhere interesting. Not a conference hotel. A place people are excited to visit.

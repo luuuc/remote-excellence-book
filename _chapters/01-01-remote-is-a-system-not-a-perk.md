@@ -17,7 +17,7 @@ seo:
 
 Remote work isn't a policy. It's a system.
 
-Most companies treat remote like a benefit—something they offer. Flexible hours. Work from anywhere. No commute.
+Most companies treat remote like a benefit. Something they offer. Flexible hours. Work from anywhere. No commute.
 
 That's thinking small.
 

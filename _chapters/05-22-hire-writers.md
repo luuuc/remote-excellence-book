@@ -32,10 +32,11 @@ When you hire for remote, look at how candidates communicate in writing:
 - Can they explain complex ideas simply?
 - Do they structure information logically?
 
+<br>
 This isn't about grammar or prose style. It's about clarity of thought. Good writing is good thinking made visible.
 
 **Try this in your next interview:**
 
 Ask candidates to write something during the process. A brief proposal. An explanation of their last project. Feedback on a mock document. Watch how they organize their thoughts.
 
-A brilliant engineer who can't communicate in writing will struggle in remote environments. Factor that into your hiring—heavily.
+A brilliant engineer who can't communicate in writing will struggle in remote environments. Factor that into your hiring. Heavily.

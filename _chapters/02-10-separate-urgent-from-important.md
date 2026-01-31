@@ -21,7 +21,7 @@ Remote communication needs three layers. Each serves a different purpose.
 
 **Async coordination** for daily work. Status updates. Questions. Decisions. Response in hours.
 
-**Persistent knowledge** for permanence. Documentation. Decisions. Context. Response never required—it's reference material.
+**Persistent knowledge** for permanence. Documentation. Decisions. Context. Response never required. It's reference material.
 
 Most teams muddle these together. Everything goes in Slack. Urgent and trivial compete for attention. Important decisions vanish into scroll.
 

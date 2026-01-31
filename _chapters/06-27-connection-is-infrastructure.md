@@ -23,6 +23,7 @@ This matters. Humans need connection. Teams that feel connected collaborate bett
 
 So build it intentionally.
 
+<br>
 **What works:**
 
 - A dedicated social channel with zero work talk. Share wins, weekend photos, random thoughts.
@@ -30,7 +31,7 @@ So build it intentionally.
 - Team channels for non-work interests. The running club. The parents group. The music nerds.
 - Async check-ins that go beyond status updates. "What's one thing you're excited about this week?"
 
-
+<br>
 **What doesn't work:**
 
 - Mandatory fun. The moment you require participation, you've killed the vibe.
@@ -38,11 +39,10 @@ So build it intentionally.
 - Social activities that favor extroverts. Not everyone wants to play games on Zoom.
 - Over-engineering it. You're creating space, not running a program.
 
-
 > "Connection is why we're here. We are hardwired to connect with others, it's what gives purpose and meaning to our lives."<br>
 > <small>— Brené Brown, *Daring Greatly*</small>
 
-
+<br>
 The key word is "optional". Create the spaces. Stock them with low-pressure activities. Then let people choose their level of participation.
 
 Some will show up to everything. Some will lurk. Some will skip it entirely. All of these are fine.

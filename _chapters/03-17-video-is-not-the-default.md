@@ -21,7 +21,7 @@ Stop defaulting to video calls.
 
 This is lazy. It's also exhausting.
 
-Video calls demand full attention. You can't do anything else. You can't think while someone's talking. You can't reference documents easily. You can't respond thoughtfully—you have to react instantly.
+Video calls demand full attention. You can't do anything else. You can't think while someone's talking. You can't reference documents easily. You can't respond thoughtfully. You have to react instantly.
 
 Worse: video calls leave no artifact. The discussion happens, decisions get made, and then... nothing. No record. No reference. Two weeks later, nobody remembers what was decided.
 

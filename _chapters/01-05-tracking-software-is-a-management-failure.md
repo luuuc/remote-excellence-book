@@ -21,6 +21,6 @@ Deadline slipping? Check in more often. Quality dropping? Require more updates. 
 
 This is backwards.
 
-If someone isn't delivering, that's a conversation—not a software purchase. Tracking tools don't fix performance problems. They just make the symptoms visible while creating new problems for everyone else.
+If someone isn't delivering, that's a conversation, not a software purchase. Tracking tools don't fix performance problems. They just make the symptoms visible while creating new problems for everyone else.
 
 Address issues directly. One person failing doesn't justify surveilling the team.

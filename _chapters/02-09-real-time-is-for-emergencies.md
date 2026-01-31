@@ -23,6 +23,6 @@ Everything else can wait.
 
 Create one channel for genuine urgency. Keep it quiet. When something shows up there, people know it matters.
 
-If you cry wolf—using the urgent channel for non-urgent things—you train people to ignore it. When real emergencies happen, no one responds.
+If you cry wolf by using the urgent channel for non-urgent things, you train people to ignore it. When real emergencies happen, no one responds.
 
 Protect your emergency channel. Use it sparingly. When it lights up, everyone pays attention.
