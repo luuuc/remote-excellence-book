@@ -1,6 +1,7 @@
 ---
 layout: chapter
 title: "The Villains"
+show_chapter_number: false
 part: "Before You Start"
 order: 2
 metadata:

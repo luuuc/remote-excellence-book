@@ -1,6 +1,7 @@
 ---
 layout: chapter
-title: "Before You Start"
+title: "Introduction"
+show_chapter_number: false
 part: "Before You Start"
 order: 1
 metadata:
@@ -21,26 +22,27 @@ We're not going to present "both sides" of remote work. We're not going to hedge
 
 Some of those opinions will make you uncomfortable. Good.
 
+<br>
 **This book is for:**
 - Founders building remote-first companies
 - Leaders trying to fix broken distributed teams
 - Managers who suspect their current approach isn't working
 - Anyone tired of pretending hybrid is the answer
 
-
+<br>
 **This book is not for:**
 - People looking for permission to keep doing what they're doing
 - Companies that want remote to feel exactly like the office
 - Managers who need to see butts in seats to feel in control
 
-
+<br>
 We're going to tell you that most of what passes for "remote work" is actually office work done badly from home. We're going to tell you that your daily standups are a waste of time. We're going to tell you that your tracking software is an admission of failure.
 
 If that bothers you, this isn't your book.
 
 If it excites you, keep reading.
 
-
+<br>
 **How to read this:**
 
 Each chapter is short. Read them in order, or skip around. Dog-ear the ones that resonate. Argue with the ones that don't.
@@ -49,4 +51,5 @@ But don't just read. Do something. Change one thing Monday morning. Then another
 
 Remote excellence isn't a destination. It's a practice.
 
+<br>
 Let's begin.

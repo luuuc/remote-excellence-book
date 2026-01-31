@@ -47,7 +47,9 @@
           {% endif %}
           <li>
             <a href="{{ chapter.url }}">
+              {% unless chapter.show_chapter_number == false %}
               <small>{{ chapter.metadata.principle }}.</small>
+              {% endunless %}
               {{ chapter.title }}
             </a>
           </li>

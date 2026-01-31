@@ -1,6 +1,7 @@
 ---
 layout: chapter
 title: "Remote Is Better"
+show_chapter_number: false
 part: "Before You Start"
 order: 3
 metadata:

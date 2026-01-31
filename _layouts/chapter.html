@@ -19,7 +19,10 @@
     <!-- Hero Section -->
     <section class="hero">
       <div class="container">
-        <div class="chapter-number">{{page.part}} · Chapter {{page.metadata.principle}}</div>
+        <div class="chapter-number">
+          {{page.part}}{% unless page.show_chapter_number == false %} · Principle
+          {{page.metadata.principle}}{% endunless %}
+        </div>
         <h1>{{page.title}}</h1>
         {% if page.description %}
         <p>{{page.description}}</p>
@@ -37,15 +40,17 @@
     {% if page.next %}
     <section class="content-footer">
       <div class="container">
-        <a href="{{page.next.url}}" class="next-chapter">{{page.next.title}} →</a>
+        <a href="{{page.next.url}}" class="next-chapter">{{page.next.title}} → </a>
       </div>
     </section>
     {% endif %}
 
-    <div class="container">{% include comments.html %}</div>
-
     <!-- Footer -->
     {% include footer.html %}
+
+    <!-- Comments -->
+    <div class="container">{% include comments.html %}</div>
+
     <!-- Foot -->
     {% include foot.html %}
   </body>
