@@ -18,7 +18,7 @@ Remote work isn't a policy. It's a system.
 
 Most companies treat remote like a benefit. Remote done right is a competitive advantage. This book is about the system.
 
-<br>
+
 # 36 Principles on Remote Excellence
 
 **9 parts** on building distributed teams that work:
