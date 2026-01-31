@@ -1,6 +1,6 @@
 ---
 layout: chapter
-title: "Meetings Are Toxic"
+title: "Meetings Should Be Rare"
 part: "Communication"
 order: 212
 metadata:
@@ -33,3 +33,6 @@ A one-hour meeting with 8 people isn't one hour. It's eight hours of your compan
 That meeting needs to create at least eight hours of value. Most don't come close.
 
 Remote teams that meet constantly are usually compensating for poor written communication. Fix the writing. The meetings will decrease.
+
+<br><br>
+<small>*The "meeting math" concept was popularized by Jason Fried and Basecamp.*</small>
