@@ -160,10 +160,17 @@ body {
   margin-bottom: 0.5rem;
 }
 
-.nav-version-switcher {
+.nav-bottom-links {
   margin-top: 2rem;
   padding-top: 1.5rem;
   border-top: 1px solid #eee;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav-bottom-links .nav-version-link {
+  flex: 1;
+  min-width: 0;
 }
 
 .nav-version-link {
