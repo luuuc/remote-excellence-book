@@ -34,17 +34,14 @@ None of this happens when every slot is filled.
 - Everything else: open
 - No guilt about "wasting time"
 
-<br>
 Trust that smart people in proximity will create value. They don't need an agenda to do it.
 
-<br>
 **What deserves scheduled time:**
 
 - Kickoffs or big-picture strategy (once)
 - Something fun and active together (not sitting in chairs)
 - One meal where the whole group is together
 
-<br>
 **What doesn't:**
 
 - Anything you could do over Zoom
@@ -52,7 +49,6 @@ Trust that smart people in proximity will create value. They don't need an agend
 - Document reviews
 - "Breakout sessions" to "maximize productivity"
 
-<br>
 You can do work anytime. You can only build relationships when you're together.
 
 Protect that time. Leave it unscheduled.

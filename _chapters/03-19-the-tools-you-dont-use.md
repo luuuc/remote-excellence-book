@@ -32,14 +32,12 @@ The tool you don't add is communication overhead you don't create. It's one less
 - Integration maintenance
 - License fees that compound
 
-<br>
 Most teams accumulate tools. Few subtract them.
 
 
 > "Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away."<br>
 > <small>— Antoine de Saint-Exupéry</small>
 
-<br>
 **Before adding any tool, ask:**
 
 1. Can we do this with something we already have?
@@ -47,7 +45,6 @@ Most teams accumulate tools. Few subtract them.
 3. Is the pain bad enough to justify the overhead?
 4. Who will own keeping this organized?
 
-<br>
 If you can't answer all four clearly, the answer is no.
 
 **The best tool stack is the one you barely notice.** It fades into the background. People know exactly where things go and where to find them. There's no debate about which app to use for what.

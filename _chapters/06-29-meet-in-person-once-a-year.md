@@ -39,7 +39,6 @@ That's still cheaper than a month of office rent in most cities. And the return 
 > "I see the retreats as an essential part of the work we do together. If we would operate the company without these regular face-to-face gatherings, we would be less effective and feel less connected."<br>
 > — <small>Joel Gascoigne, CEO of Buffer</small>
 
-<br>
 **Make it count:**
 
 Pick somewhere interesting. Not a conference hotel. A place people are excited to visit.

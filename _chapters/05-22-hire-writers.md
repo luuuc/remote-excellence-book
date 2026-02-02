@@ -32,7 +32,6 @@ When you hire for remote, look at how candidates communicate in writing:
 - Can they explain complex ideas simply?
 - Do they structure information logically?
 
-<br>
 This isn't about grammar or prose style. It's about clarity of thought. Good writing is good thinking made visible.
 
 **Try this in your next interview:**

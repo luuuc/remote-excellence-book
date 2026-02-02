@@ -31,14 +31,12 @@ Neither is right or wrong. But choose consciously.
 - Where does information end up? Is it findable later?
 - What happens to people who aren't online when others are?
 
-<br>
 The tool you choose for daily communication will shape your culture more than any manifesto or handbook.
 
 
 > "We shape our tools and thereafter they shape us."<br>
 > <small>— John Culkin, on Marshall McLuhan (1967)</small>
 
-<br>
 **Watch out for:**
 
 - Tools that emphasize presence (online/offline indicators)
@@ -46,7 +44,6 @@ The tool you choose for daily communication will shape your culture more than an
 - Tools with infinite scroll (conversations that bury important decisions)
 - Tools that fragment information (multiple apps for related things)
 
-<br>
 Your tools are teaching your team how to work, every minute of every day.
 
 Choose teachers carefully.

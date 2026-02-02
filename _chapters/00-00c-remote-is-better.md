@@ -54,9 +54,7 @@ Unclear decision? Walk over and ask.
 
 Missing context? Absorb it by osmosis.
 
-Remote forces you to write things down.<br>
-To be explicit.<br>
-To document.<br>
+Remote forces you to write things down. To be explicit. To document.
 
 The result is clearer thinking, better decisions, and institutional knowledge that survives when people leave.
 
@@ -64,9 +62,7 @@ The result is clearer thinking, better decisions, and institutional knowledge th
 
 In offices, mediocre performers hide.
 
-They look busy. <br>
-They attend meetings.<br>
-They stay late.<br>
+They look busy. They attend meetings. They stay late.
 
 Their actual output is invisible behind the performance.
 
@@ -78,11 +74,11 @@ Either the work gets done or it doesn't.
 
 **Better lives.**
 
-No commute.<br>
-No dress code.<br>
-No fluorescent lights.<br>
-No overpriced lunch.<br>
-No performative face time.
+- No commute
+- No dress code
+- No fluorescent lights
+- No overpriced lunch
+- No performative face time
 
 People get hours back every day.
 
@@ -94,12 +90,12 @@ They live where they want, not where the office happens to be.
 
 **Better economics.**
 
-No office lease.<br>
-No furniture.<br>
-No security.<br>
-No maintenance.<br>
-No parking.<br>
-No snacks.
+- No office lease
+- No furniture
+- No security
+- No maintenance
+- No parking
+- No snacks
 
 The math isn't close.
 
@@ -120,7 +116,6 @@ Culture is how you treat people, not where you sit. Remote forces you to be inte
 
 Some people prefer fax machines. That's not an argument for building your company around them.
 
-<br>
 The office had a good run. For most knowledge work, its time has passed.
 
 Remote isn't a compromise you make for flexibility.
