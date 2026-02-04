@@ -4,7 +4,7 @@ title: "Stop Watching Your Employees"
 part: "The Foundation"
 order: 102
 metadata:
-  principle: 02
+  principle: "02"
   reading_time_in_minutes: 1
 categories:
   - culture

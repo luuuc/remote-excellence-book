@@ -4,7 +4,7 @@ title: "Trust Is the Default"
 part: "The Foundation"
 order: 103
 metadata:
-  principle: 03
+  principle: "03"
   reading_time_in_minutes: 1
 categories:
   - culture

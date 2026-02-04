@@ -4,7 +4,7 @@ title: "Show Your Work"
 part: "The Foundation"
 order: 106
 metadata:
-  principle: 06
+  principle: "06"
   reading_time_in_minutes: 1
 categories:
   - culture

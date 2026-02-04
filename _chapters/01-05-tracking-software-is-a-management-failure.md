@@ -4,7 +4,7 @@ title: "Tracking Software Is a Management Failure"
 part: "The Foundation"
 order: 105
 metadata:
-  principle: 05
+  principle: "05"
   reading_time_in_minutes: 1
 categories:
   - culture

@@ -4,7 +4,7 @@ title: "If It's Not Written, It Doesn't Exist"
 part: "Communication"
 order: 207
 metadata:
-  principle: 07
+  principle: "07"
   reading_time_in_minutes: 1
 categories:
   - processes

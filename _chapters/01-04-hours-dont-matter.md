@@ -4,7 +4,7 @@ title: "Hours Don't Matter"
 part: "The Foundation"
 order: 104
 metadata:
-  principle: 04
+  principle: "04"
   reading_time_in_minutes: 1
 categories:
   - culture

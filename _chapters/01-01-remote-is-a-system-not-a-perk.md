@@ -4,7 +4,7 @@ title: "Remote Is a System, Not a Perk"
 part: "The Foundation"
 order: 101
 metadata:
-  principle: 01
+  principle: "01"
   reading_time_in_minutes: 1
 categories:
   - culture
