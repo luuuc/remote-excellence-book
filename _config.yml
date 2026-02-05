@@ -31,6 +31,7 @@ collections:
 plugins:
   - jekyll-sitemap
   - jekyll-feed
+  - jekyll-redirect-from
 
 # Include dot-directories (for .well-known)
 include:
