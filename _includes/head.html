@@ -84,9 +84,9 @@
     "inLanguage": "{{ site.book.language | default: 'en-US' }}",
     "license": "{{ site.book.license }}"
   }
-  {% if page.layout == 'chapter' %},
-  "articleSection": "{{ page.part }}",
-  "position": {{ page.order }}
+  {% if page.layout == 'chapter' %}{% if page.part %},
+  "articleSection": "{{ page.part }}"{% endif %}{% if page.order %},
+  "position": {{ page.order }}{% endif %}
   {% endif %}
 }
 </script>
