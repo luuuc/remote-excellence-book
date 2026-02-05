@@ -154,7 +154,7 @@ Before scheduling, ask: can this be a document? A recorded video? A written prop
 
 A one-hour meeting with 8 people isn't one hour. It's eight hours of your company's time. That meeting needs to create at least eight hours of value. Most don't come close.
 
-**Read more:** [Principle 12 - Meetings Are Toxic](/chapters/02-12-meetings-are-toxic/), [Principle 9 - Real-Time Is for Emergencies](/chapters/02-09-real-time-is-for-emergencies/)
+**Read more:** [Principle 12 - Meetings Are Toxic](/chapters/02-12-meetings-should-be-rare/), [Principle 9 - Real-Time Is for Emergencies](/chapters/02-09-real-time-is-for-emergencies/)
 
 <br>
 
