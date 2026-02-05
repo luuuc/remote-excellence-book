@@ -1,6 +1,12 @@
 ---
 layout: chapter
 
+redirect_from:
+  - /chapters/08-authenticity-imperative
+  - /chapters/08-authenticity-imperative/
+
+show_chapter_number: false
+
 categories:
   - culture
   - relationships

@@ -1,6 +1,12 @@
 ---
 layout: chapter
 
+redirect_from:
+  - /chapters/04-remote-work-tech-stack
+  - /chapters/04-remote-work-tech-stack/
+
+show_chapter_number: false
+
 categories:
   - tools
   - technology

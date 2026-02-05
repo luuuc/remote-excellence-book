@@ -1,6 +1,12 @@
 ---
 layout: chapter
 
+redirect_from:
+  - /chapters/10-conclusion
+  - /chapters/10-conclusion/
+
+show_chapter_number: false
+
 categories:
   - implementation
   - strategy

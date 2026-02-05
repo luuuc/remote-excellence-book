@@ -1,6 +1,12 @@
 ---
 layout: chapter
 
+redirect_from:
+  - /chapters/02-the-foundation
+  - /chapters/02-the-foundation/
+
+show_chapter_number: false
+
 categories:
   - culture
   - leadership

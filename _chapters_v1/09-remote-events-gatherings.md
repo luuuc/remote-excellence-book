@@ -1,6 +1,12 @@
 ---
 layout: chapter
 
+redirect_from:
+  - /chapters/09-remote-events-gatherings
+  - /chapters/09-remote-events-gatherings/
+
+show_chapter_number: false
+
 categories:
   - events
   - relationships

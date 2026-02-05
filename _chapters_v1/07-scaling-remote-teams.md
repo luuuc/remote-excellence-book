@@ -1,6 +1,12 @@
 ---
 layout: chapter
 
+redirect_from:
+  - /chapters/07-scaling-remote-teams
+  - /chapters/07-scaling-remote-teams/
+
+show_chapter_number: false
+
 categories:
   - growth
   - scaling

@@ -1,6 +1,12 @@
 ---
 layout: chapter
 
+redirect_from:
+  - /chapters/01-introduction
+  - /chapters/01-introduction/
+
+show_chapter_number: false
+
 categories:
   - fundamentals
   - leadership

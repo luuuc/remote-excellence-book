@@ -1,6 +1,12 @@
 ---
 layout: chapter
 
+redirect_from:
+  - /chapters/05-methodology-frameworks
+  - /chapters/05-methodology-frameworks/
+
+show_chapter_number: false
+
 categories:
   - processes
   - methodology

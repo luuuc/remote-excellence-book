@@ -1,6 +1,12 @@
 ---
 layout: chapter
 
+redirect_from:
+  - /chapters/06-remote-first-vs-remote-friendly
+  - /chapters/06-remote-first-vs-remote-friendly/
+
+show_chapter_number: false
+
 categories:
   - strategy
   - culture

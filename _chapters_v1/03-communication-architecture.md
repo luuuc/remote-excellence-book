@@ -1,6 +1,12 @@
 ---
 layout: chapter
 
+redirect_from:
+  - /chapters/03-communication-architecture
+  - /chapters/03-communication-architecture/
+
+show_chapter_number: false
+
 categories:
   - processes
   - communication
