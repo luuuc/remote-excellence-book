@@ -65,31 +65,31 @@ Rate your organization on each core area (1-5 scale):
 
 ### Days 1-30: Foundation
 
-- Start with trust-building practices ([Chapter 2](/chapters/02-the-foundation.html))
-- Audit and improve your communication channels ([Chapter 3](/chapters/03-communication-architecture.html))
+- Start with trust-building practices ([Chapter 2](/v1/02-the-foundation/))
+- Audit and improve your communication channels ([Chapter 3](/v1/03-communication-architecture/))
 - Implement async daily updates
 - Begin documenting decisions and context
 
 ### Days 31-60: Systems
 
-- Optimize your tech stack ([Chapter 4](/chapters/04-remote-work-tech-stack.html))
-- Adapt your methodology for remote work ([Chapter 5](/chapters/05-methodology-frameworks.html))
-- Clarify your remote-first vs. remote-friendly stance ([Chapter 6](/chapters/06-remote-first-vs-remote-friendly.html))
+- Optimize your tech stack ([Chapter 4](/v1/04-remote-work-tech-stack/))
+- Adapt your methodology for remote work ([Chapter 5](/v1/05-methodology-frameworks/))
+- Clarify your remote-first vs. remote-friendly stance ([Chapter 6](/v1/06-remote-first-vs-remote-friendly/))
 - Create your first authentic team rituals
 
 ### Days 61-90: Culture
 
-- Implement scaling practices appropriate to your size ([Chapter 7](/chapters/07-scaling-remote-teams.html))
-- Foster authentic connection practices ([Chapter 8](/08-authenticity-imperative.html))
-- Plan your first meaningful team gathering ([Chapter 9](/chapters/09-remote-events-gatherings.html))
+- Implement scaling practices appropriate to your size ([Chapter 7](/v1/07-scaling-remote-teams/))
+- Foster authentic connection practices ([Chapter 8](/v1/08-authenticity-imperative/))
+- Plan your first meaningful team gathering ([Chapter 9](/v1/09-remote-events-gatherings/))
 - Measure progress and iterate
 
 ## Choose Your Starting Point
 
-- If coordination is your biggest challenge: Start with Communication Architecture ([Chapter 3](/chapters/03-communication-architecture.html))
-- If people feel disconnected: Begin with Trust and Authenticity ([Chapters 2](/chapters/02-the-foundation.html) & [8](/08-authenticity-imperative.html))
-- If you're scaling rapidly: Focus on Scaling Practices ([Chapter 7](/chapters/07-scaling-remote-teams.html))
-- If you're still figuring out your remote commitment: Tackle Remote-First vs. Remote-Friendly ([Chapter 6](/chapters/06-remote-first-vs-remote-friendly.html))
+- If coordination is your biggest challenge: Start with Communication Architecture ([Chapter 3](/v1/03-communication-architecture/))
+- If people feel disconnected: Begin with Trust and Authenticity ([Chapters 2](/v1/02-the-foundation/) & [8](/v1/08-authenticity-imperative/))
+- If you're scaling rapidly: Focus on Scaling Practices ([Chapter 7](/v1/07-scaling-remote-teams/))
+- If you're still figuring out your remote commitment: Tackle Remote-First vs. Remote-Friendly ([Chapter 6](/v1/06-remote-first-vs-remote-friendly/))
 
 # Remote Excellence Achieved {#chapter-10-3}
 
@@ -187,49 +187,49 @@ We'd love to hear about your remote excellence implementations:
 
 ## Templates and Checklists
 
-### From [Chapter 2](/chapters/02-the-foundation.html): Trust Foundation
+### From [Chapter 2](/v1/02-the-foundation/): Trust Foundation
 
 - Trust-Building Checklist for New Leaders
 - Weekly Async Update Template
 - Decision Documentation Template
 
-### From [Chapter 3](/chapters/03-communication-architecture.html): Communication Architecture
+### From [Chapter 3](/v1/03-communication-architecture/): Communication Architecture
 
 - Communication Channel Audit Spreadsheet
 - Response Time Expectations Framework
 - Meeting Effectiveness Scorecard
 
-### From [Chapter 4](/chapters/04-remote-work-tech-stack.html): Tech Stack
+### From [Chapter 4](/v1/04-remote-work-tech-stack/): Tech Stack
 
 - Tool Evaluation Criteria Checklist
 - Integration Mapping Template
 - Quarterly Tool Audit Process
 
-### From [Chapter 5](/chapters/05-methodology-frameworks.html): Methodologies
+### From [Chapter 5](/v1/05-methodology-frameworks/): Methodologies
 
 - Remote Scrum Adaptation Guide
 - Shape Up Pitch Template
 - OKR Setting Workshop Agenda
 
-### From [Chapter 6](/chapters/06-remote-first-vs-remote-friendly.html): Remote-First Implementation
+### From [Chapter 6](/v1/06-remote-first-vs-remote-friendly/): Remote-First Implementation
 
 - Remote-First Policy Template
 - Hybrid Meeting Guidelines
 - Location Bias Audit Checklist
 
-### From [Chapter 7](/chapters/07-scaling-remote-teams.html): Scaling Practices
+### From [Chapter 7](/v1/07-scaling-remote-teams/): Scaling Practices
 
 - Scaling Inflection Point Assessment
 - Documentation Standards Template
 - Leadership Structure Planning Guide
 
-### From [Chapter 8](/chapters/08-authenticity-imperative.html): Authenticity
+### From [Chapter 8](/v1/08-authenticity-imperative/): Authenticity
 
 - Personal User Manual Template
 - Authenticity Boundary Guidelines
 - Cultural Integration Checklist
 
-### From [Chapter 9](/chapters/09-remote-events-gatherings.html): Events and Gatherings
+### From [Chapter 9](/v1/09-remote-events-gatherings/): Events and Gatherings
 
 - Retreat Planning Checklist
 - Virtual Event Facilitation Guide
