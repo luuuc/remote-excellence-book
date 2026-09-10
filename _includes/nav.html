@@ -1,6 +1,6 @@
 <div class="offcanvas" id="offcanvas">
   <div class="offcanvas-header">
-    <h3>Navigation</h3>
+    <h3>Contents</h3>
     <button class="close-btn" onclick="toggleMenu()">×</button>
   </div>
   <nav>
@@ -18,7 +18,7 @@
           </a>
           <ul class="nav-submenu">
             {% for section in chapter.sections %}
-            <li><a href="{{ chapter.url }}#{{ section.id }}">{{ section.title }}</a></li>
+            <li><a href="{{ chapter.url }}#{{ section.id }}"><span>{{ section.title }}</span></a></li>
             {% endfor %}
           </ul>
         </li>
@@ -35,32 +35,27 @@
           </a>
         </li>
       {% else %}
-        <!-- Version 2 Navigation (default) -->
+        <!-- Version 2 Navigation (default). Part order comes from _data/parts.yml. -->
         {% assign chapters = site.chapters | sort: "order" %}
-        {% assign current_part = "" %}
 
-        {% for chapter in chapters %}
-          {% if chapter.part != current_part %}
-            {% if current_part != "" %}
-              </ul></li>
-            {% endif %}
-            {% assign current_part = chapter.part %}
-            <li class="nav-part">
-              <span class="nav-part-title">{{ chapter.part }}</span>
-              <ul class="nav-submenu">
-          {% endif %}
-          <li>
-            <a href="{{ chapter.url }}">
-              {% unless chapter.show_chapter_number == false %}
-              <small>{{ chapter.metadata.principle }}.</small>
-              {% endunless %}
-              {{ chapter.title }}
-            </a>
+        {% for part in site.data.parts %}
+          {% assign items = chapters | where: "part", part.name %}
+          {% if items.size > 0 %}
+          <li class="nav-part{% if part.name == page.part %} is-current-part{% endif %}">
+            <span class="nav-part-title">{{ part.name }}</span>
+            <ul class="nav-submenu">
+              {% for c in items %}
+              <li{% if c.url == page.url %} class="is-current"{% endif %}>
+                <a href="{{ c.url }}"{% if c.url == page.url %} aria-current="page"{% endif %}>
+                  <small>{% unless c.show_chapter_number == false %}{{ c.metadata.principle }}.{% endunless %}</small>
+                  <span>{{ c.title }}</span>
+                </a>
+              </li>
+              {% endfor %}
+            </ul>
           </li>
+          {% endif %}
         {% endfor %}
-        {% if current_part != "" %}
-          </ul></li>
-        {% endif %}
 
         <li class="nav-bottom-links">
           <a href="/v1/01-introduction/" class="nav-version-link">

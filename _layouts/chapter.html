@@ -17,22 +17,49 @@
     <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
 
     <!-- Hero Section -->
+    {% comment %}`where` returns the whole list when the value is nil, so the
+    lookup only runs for a page that actually has a part.{% endcomment %}
+    {% assign part_data = "" %}
+    {% if page.part %}{% assign part_data = site.data.parts | where: "name", page.part | first %}{% endif %}
     <section class="hero">
       <div class="container">
-        <div class="chapter-number">
-          {{page.part}}{% unless page.show_chapter_number == false %} · Principle
-          {{page.metadata.principle}}{% endunless %}
+        <div class="hero-inner">
+          <div class="hero-text">
+            <div class="chapter-number">
+              {% if page.metadata.chapter %}
+              <span>Version 1</span>
+              <span>Chapter {{page.metadata.chapter}}</span>
+              {% else %}
+              {% if page.part %}<span>{{page.part}}</span>{% endif %}
+              {% unless page.show_chapter_number == false %}
+              <span>Principle {{page.metadata.principle}}</span>
+              {% endunless %}
+              {% endif %}
+              {% if page.metadata.reading_time_in_minutes %}
+              <span>{{page.metadata.reading_time_in_minutes}} min</span>
+              {% endif %}
+            </div>
+            <h1>{{page.title}}</h1>
+            {% if page.description %}
+            <p>{{page.description}}</p>
+            {% endif %}
+          </div>
+          {% if part_data.illustration %}
+          <div class="hero-art">
+            <img
+              src="/assets/images/sections/{{part_data.illustration}}.svg"
+              alt=""
+              width="160"
+              height="160"
+            />
+          </div>
+          {% endif %}
         </div>
-        <h1>{{page.title}}</h1>
-        {% if page.description %}
-        <p>{{page.description}}</p>
-        {% endif %}
-        <!--<div class="reading-time">{% include reading_time.html %}</div>-->
       </div>
     </section>
 
     <!-- Content -->
-    <main class="content">
+    <main class="content{% if page.metadata.principle %} content--prose{% endif %}">
       <div class="container">{{content}}</div>
     </main>
 
@@ -40,7 +67,9 @@
     {% if page.next %}
     <section class="content-footer">
       <div class="container">
-        <a href="{{page.next.url}}" class="next-chapter">{{page.next.title}} → </a>
+        <a href="{{page.next.url}}" class="next-chapter"
+          ><small>Next</small>{{page.next.title}} &rarr;</a
+        >
       </div>
     </section>
     {% endif %}

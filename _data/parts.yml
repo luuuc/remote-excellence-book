@@ -1,0 +1,58 @@
+# The parts of the book, in reading order.
+#
+# `name` must match the `part:` in a chapter's front matter exactly — the
+# chapter layout, the menu and the home page all look parts up by it. A part
+# missing from this file still gets its chapters, just no drawing and no row
+# on the home page, so add a line here whenever you add a part.
+#
+# `illustration` is the file stem under assets/images/sections/.
+# `number` is omitted on the parts that carry no principle numbers.
+
+- name: Before You Start
+  illustration: before-you-start
+  description: The villains, and why remote is better anyway
+
+- name: The Foundation
+  number: "01"
+  illustration: foundation
+  description: Trust, autonomy, and why tracking software is a failure
+
+- name: Communication
+  number: "02"
+  illustration: communication
+  description: Writing, async-first design, and why meetings are toxic
+
+- name: Tools
+  number: "03"
+  illustration: tools
+  description: Every tool is a tax, and your tools shape your culture
+
+- name: Remote-First
+  number: "04"
+  illustration: remote-first
+  description: Why “remote-friendly” is a lie
+
+- name: Hiring
+  number: "05"
+  illustration: hiring
+  description: Hire writers, not babysitters
+
+- name: Connection
+  number: "06"
+  illustration: connection
+  description: Humans first, functions second
+
+- name: Scaling
+  number: "07"
+  illustration: scaling
+  description: What worked at five won't work at fifteen
+
+- name: Environment
+  number: "08"
+  illustration: environment
+  description: Buy them a damn chair
+
+- name: Conclusion
+  number: "09"
+  illustration: conclusion
+  description: The tensions, what we believe, and Monday morning

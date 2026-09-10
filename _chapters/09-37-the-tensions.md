@@ -20,7 +20,6 @@ I've written 36 principles with conviction. I believe in them.
 
 But conviction isn't certainty.
 
-<br>
 **The loneliness tax**
 
 We build connection infrastructure. Social channels. Virtual coffees. Annual offsites.
@@ -33,7 +32,6 @@ Some loneliness is structural. The cost of choosing a way of working most of soc
 
 We've mitigated it. We haven't solved it.
 
-<br>
 **The junior problem**
 
 Learning by osmosis is real. Watching how senior people navigate conflict, handle ambiguity, make decisions.

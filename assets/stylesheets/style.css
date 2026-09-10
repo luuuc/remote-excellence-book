@@ -1,4 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap");
+
+/* Palette — the book's existing colours, nothing new.
+   #253951  navy     headings, logo, nav, rules, drawings
+   #e8f2fc  band     hero + content-footer
+   #007acc  link     link underlines and hover
+   #333     body text
+   #666     meta text, descriptions
+   #999     numbers, separators
+   #eee     hairlines
+   #f8f9fa  code + blockquote ground
+   #f5f5f5  footer + nav card ground
+
+   Two faces. Merriweather for everything read in sequence, Archivo for
+   everything scanned instead: meta lines, sub-heads, menu, footer. */
 
 * {
   margin: 0;
@@ -10,9 +24,13 @@
 
 body {
   font-family: "Merriweather", Georgia, serif;
-  //-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-  line-height: 1.8;
+  line-height: 1.68;
   color: #333;
+}
+
+::selection {
+  background: #e8f2fc;
+  color: #253951;
 }
 
 /* Header */
@@ -25,7 +43,6 @@ body {
   left: 0;
   right: 0;
   z-index: 1000;
-  //display: flex;
   align-items: center;
   gap: 1rem;
 }
@@ -47,12 +64,19 @@ body {
 
 .about {
   float: right;
-  font-size: 1rem;
-  font-weight: normal;
+  font-family: "Archivo", system-ui, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
   color: #253951;
   text-decoration: none;
-  opacity: 0.5;
-  margin-top: 0.4rem;
+  opacity: 0.55;
+  margin-top: 0.7rem;
+}
+
+.about:hover {
+  opacity: 1;
 }
 
 /* Offcanvas Menu */
@@ -80,6 +104,15 @@ body {
   margin-bottom: 2rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid #eee;
+}
+
+.offcanvas-header h3 {
+  font-family: "Archivo", system-ui, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #253951;
 }
 
 .close-btn {
@@ -122,50 +155,93 @@ body {
 }
 
 .nav-submenu li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
 .nav-submenu a {
-  font-size: 1.15rem;
+  display: flex;
+  gap: 0.7rem;
+  font-size: 1.0625rem;
+  line-height: 1.4;
   font-weight: normal;
-  color: #000;
+  color: #253951;
   border-bottom: none;
-  padding: 0.25rem 0;
+  padding: 0.3rem 0;
 }
 
 .nav-submenu a small {
-  font-size: 1.15rem;
-  font-weight: bold;
+  flex: none;
+  width: 1.6rem;
+  text-align: right;
+  font-family: "Archivo", system-ui, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
   color: #999;
   border-bottom: none;
-  padding: 0.25rem 0;
+  padding: 0;
 }
+
 .nav-submenu a:hover {
   color: #007acc;
 }
 
 .nav-part {
-  margin-top: 1.5rem;
+  margin-top: 1.9rem;
 }
 
 .nav-part-title {
   display: block;
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: #253951;
+  font-family: "Archivo", system-ui, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #666;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  padding: 0.5rem 0;
-  border-bottom: 2px solid #253951;
-  margin-bottom: 0.5rem;
+  letter-spacing: 0.14em;
+  text-decoration: none;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 0.6rem;
+}
+
+/* Where you are. The part takes the band, the principle takes the square. */
+.nav-part.is-current-part > .nav-part-title {
+  color: #253951;
+  background: #e8f2fc;
+  border-bottom-color: #253951;
+  margin-left: -0.6rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+}
+
+.nav-submenu li.is-current {
+  position: relative;
+}
+
+.nav-submenu li.is-current::before {
+  content: "";
+  position: absolute;
+  left: -1.2rem;
+  top: 0.7rem;
+  width: 10px;
+  height: 10px;
+  background: #253951;
+}
+
+.nav-submenu li.is-current > a {
+  font-weight: bold;
+}
+
+.nav-submenu li.is-current > a small {
+  color: #253951;
 }
 
 .nav-bottom-links {
-  margin-top: 2rem;
+  margin-top: 2.25rem;
   padding-top: 1.5rem;
   border-top: 1px solid #eee;
   display: flex;
-  gap: 0.5rem;
+  gap: 0.6rem;
 }
 
 .nav-bottom-links .nav-version-link {
@@ -179,14 +255,18 @@ body {
   padding: 1rem;
   border-radius: 5px;
   text-decoration: none;
-  color: #666;
+  font-family: "Archivo", system-ui, sans-serif;
+  color: #253951;
   font-size: 0.95rem;
   padding: 1rem !important;
 }
 
 .nav-version-link small {
   display: block;
-  font-size: 0.75rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
   color: #999;
   margin-bottom: 0.25rem;
 }
@@ -200,21 +280,71 @@ body {
 .hero {
   background: #e8f2fc;
   color: #253951;
-  padding: 8rem 2rem 0.5rem;
+  padding: 6.5rem 2rem 2.25rem;
   text-align: left;
+  border-bottom: 3px solid #253951;
+}
+
+/* The drawing lives in the band, beside the title. */
+.hero-inner {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.hero-art {
+  flex: none;
+  width: 160px;
+}
+
+.hero-art img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.chapter-number {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  font-family: "Archivo", system-ui, sans-serif;
+  color: #666;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  margin-bottom: 0.9rem;
+}
+
+/* The separator belongs to the item that follows it, so a one-item meta
+   line never inherits an orphan bar. */
+.chapter-number span + span::before {
+  content: "/";
+  margin-right: 0.6rem;
+  color: #999;
 }
 
 .hero h1 {
-  font-size: 1.8rem;
-  line-height: 2.8rem;
-  margin-bottom: 1rem;
+  font-size: 2.15rem;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin-bottom: 0;
   font-weight: bold;
+  text-wrap: balance;
 }
 
 .hero p {
-  font-size: 1.4rem;
-  //max-width: 600px;
-  margin: 0 auto 2rem;
+  font-family: "Archivo", system-ui, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.55;
+  color: #253951;
+  margin: 0.9rem 0 0;
+  max-width: 32em;
 }
 
 .cta-button {
@@ -249,13 +379,13 @@ body {
 /* Content */
 .content {
   background: white;
-  padding: 2rem 1rem;
+  padding: 3rem 1rem 3.5rem;
   min-height: 60vh;
-  font-size: 1.15rem;
+  font-size: 1.1875rem;
 }
 
 .container {
-  max-width: 800px;
+  max-width: 680px;
   margin: 0 auto;
 }
 
@@ -268,41 +398,65 @@ body {
 
 .content h2 {
   color: #253951;
-  margin: 2rem 0 1rem;
+  margin: 2.4rem 0 1rem;
   font-size: 1.4rem;
 }
 
 .content h3 {
   color: #253951;
-  margin: 1.5rem 0 0.5rem;
+  margin: 1.8rem 0 0.5rem;
   font-size: 1.2rem;
 }
 
 .content p {
-  margin-bottom: 2rem;
+  margin-bottom: 1.3em;
+  text-wrap: pretty;
 }
 
 .content ul,
 .content ol {
-  margin-bottom: 1rem;
-  padding-left: 2rem;
+  margin-bottom: 1.5em;
+  padding-left: 1.5rem;
 }
 
 .content li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.55rem;
+  padding-left: 0.2rem;
+}
+
+.content li::marker {
+  color: #253951;
+}
+
+.content hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 2.5rem 0;
 }
 
 .content blockquote {
   background: #f8f9fa;
-  border-left: 4px solid #253951;
-  padding: 1rem;
-  margin: 1.5rem 0;
-  font-style: italic;
-  font-size: 90%;
+  border-left: 3px solid #253951;
+  padding: 1.15rem 1.3rem;
+  margin: 1.8rem 0 2rem;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: #253951;
 }
 
 .content blockquote p {
   margin-bottom: 0;
+}
+
+.content blockquote small {
+  display: block;
+  margin-top: 0.65rem;
+  font-family: "Archivo", system-ui, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #666;
 }
 
 .content code {
@@ -326,17 +480,67 @@ body {
   padding: 0;
 }
 
+/* Links carry a visible mark. They used to be #333 on #333: invisible. */
 .content a {
-  color: #333;
+  color: #253951;
+  text-decoration: underline;
+  text-decoration-color: #007acc;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  transition: background 0.15s ease;
 }
 
 .content a:hover {
   color: #253951;
+  background: #e8f2fc;
+  box-shadow: 0 0 0 2px #e8f2fc;
+  text-decoration-color: transparent;
 }
 
 sup a {
   text-decoration: none;
   padding: 0 0.2rem;
+}
+
+/* The opening line of a chapter is its thesis. Set it as one. */
+.content--prose > .container > p:first-child {
+  font-size: 1.34rem;
+  line-height: 1.5;
+  color: #253951;
+  margin-bottom: 1.6em;
+}
+
+/* A paragraph that is nothing but bold text is a sub-head, not a sentence.
+   Browsers without :has() fall back to plain bold, which is what it was. */
+.content--prose p:has(> strong:only-child) {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin: 2.6rem 0 1.1rem;
+  font-family: "Archivo", system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #253951;
+}
+
+.content--prose p:has(> strong:only-child)::before {
+  content: "";
+  flex: none;
+  width: 10px;
+  height: 10px;
+  background: #253951;
+}
+
+.content--prose p:has(> strong:only-child)::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+
+.content--prose p:has(> strong:only-child) > strong {
+  font-weight: 600;
 }
 
 .content .callout {
@@ -366,7 +570,7 @@ sup a {
 }
 
 .comments {
- padding: 1rem;
+  padding: 1rem;
 }
 
 .chapters-list {
@@ -404,19 +608,107 @@ sup a {
   line-height: 1.5;
 }
 
+/* The parts, on the home page. One row per part, with its drawing. */
+.parts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+}
+
+.parts-list li {
+  margin: 0;
+  padding: 0;
+}
+
+/* A row, not an inline link — it must out-rank `.content a`. */
+.content a.part-row {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid #eee;
+  text-decoration: none;
+  color: #253951;
+}
+
+.parts-list li:last-child .part-row {
+  border-bottom: 0;
+}
+
+.content a.part-row:hover {
+  background: none;
+  box-shadow: none;
+  text-decoration: none;
+}
+
+.content a.part-row:hover .part-title {
+  color: #007acc;
+}
+
+.part-n {
+  flex: none;
+  width: 1.6rem;
+  font-family: "Archivo", system-ui, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  font-variant-numeric: tabular-nums;
+  color: #999;
+}
+
+.part-art {
+  flex: none;
+  width: 64px;
+  height: 64px;
+}
+
+.part-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.part-title {
+  display: block;
+  font-size: 1.0625rem;
+  font-weight: bold;
+  line-height: 1.35;
+  color: #253951;
+}
+
+.part-desc {
+  display: block;
+  margin-top: 0.15rem;
+  font-family: "Archivo", system-ui, sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: #666;
+}
+
 /* Content Footer */
 .content-footer {
   background: #e8f2fc;
+  border-top: 3px solid #253951;
   color: #333;
-  padding: 2rem;
+  padding: 1.75rem 2rem;
   text-align: right;
 }
 
 .next-chapter {
+  font-family: "Archivo", system-ui, sans-serif;
   color: #253951;
-  font-size: 1.15em;
-  font-weight: 200;
+  font-size: 1.0625rem;
+  font-weight: 500;
   text-decoration: none;
+}
+
+.next-chapter small {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #666;
+  margin-bottom: 0.2rem;
 }
 
 .next-chapter:hover {
@@ -457,8 +749,7 @@ sup a {
 .footer {
   background: #f5f5f5;
   color: #253951;
-  opacity: 0.6;
-  padding: 1rem 2rem 2rem;
+  padding: 2rem;
   text-align: left;
 }
 
@@ -486,6 +777,7 @@ sup a {
 }
 
 .footer-nav a {
+  font-family: "Archivo", system-ui, sans-serif;
   color: #253951;
   text-decoration: none;
   font-size: 0.9rem;
@@ -496,8 +788,11 @@ sup a {
 }
 
 .copyright {
+  font-family: "Archivo", system-ui, sans-serif;
   font-size: 0.8rem;
-  margin-top: 1rem;
+  line-height: 1.6;
+  color: #666;
+  margin: 0;
   text-align: center;
 }
 
@@ -531,16 +826,17 @@ sup a {
   visibility: visible;
 }
 
-/* Better spacing for section headers and mobile lists */
-.content p strong:only-child {
-  display: inline-block;
-  margin-top: 0.5rem;
+/* Anchor targets clear the fixed header */
+.content [id] {
+  scroll-margin-top: 80px;
 }
 
 /* Responsive */
 @media (min-width: 768px) {
-  .hero h1 {
-    font-size: 1.8rem;
+  /* Once there is a margin, the square moves into it. */
+  .content--prose p:has(> strong:only-child)::before {
+    position: absolute;
+    left: -2rem;
   }
 
   .offcanvas {
@@ -554,11 +850,11 @@ sup a {
 
 @media (min-width: 1024px) {
   .content {
-    padding: 3rem 2rem;
+    padding: 3rem 2rem 3.5rem;
   }
 
   .hero {
-    padding: 8rem 2rem 0.5rem;
+    padding: 6.5rem 2rem 2.25rem;
   }
 }
 
@@ -568,14 +864,38 @@ sup a {
   }
 
   .hero {
-    padding: 6rem 1rem 0.5rem;
+    padding: 5.5rem 1rem 1.5rem;
   }
 
   .hero h1 {
-    font-size: 1.8rem;
+    font-size: 1.65rem;
+  }
+
+  .hero-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+
+  .hero-art {
+    width: 104px;
+  }
+
+  .content {
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    padding: 1.75rem 1.25rem 2.25rem;
+  }
+
+  .content--prose > .container > p:first-child {
+    font-size: 1.2rem;
   }
 
   .content li {
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .part-row {
+    gap: 0.9rem;
   }
 }

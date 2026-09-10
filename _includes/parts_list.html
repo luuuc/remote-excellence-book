@@ -1,0 +1,27 @@
+{%- comment -%}
+The parts of the book, one row each, from _data/parts.yml. A part with no
+chapters is skipped; the row links to the first chapter in the part.
+{%- endcomment -%}
+<ul class="parts-list">
+  {%- for part in site.data.parts -%}
+  {%- assign items = site.chapters | where: "part", part.name | sort: "order" -%}
+  {%- if items.size > 0 -%}
+  <li>
+    <a href="{{ items.first.url }}" class="part-row">
+      <span class="part-n">{{ part.number }}</span>
+      <img
+        class="part-art"
+        src="/assets/images/sections/{{ part.illustration }}.svg"
+        alt=""
+        width="64"
+        height="64"
+      />
+      <span class="part-text">
+        <span class="part-title">{{ part.name }}</span>
+        <span class="part-desc">{{ part.description }}</span>
+      </span>
+    </a>
+  </li>
+  {%- endif -%}
+  {%- endfor -%}
+</ul>
