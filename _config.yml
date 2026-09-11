@@ -54,6 +54,6 @@ downloads:
 book:
   published: "2025-05-15"
   modified: "2026-01-30"
-  version: "2.0"
+  version: "2.3.0"
   license: "https://creativecommons.org/licenses/by-sa/4.0/"
   language: "en-US"
