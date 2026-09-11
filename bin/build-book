@@ -34,7 +34,11 @@ esac
 # would be missing the heading anchors the published site needs.
 site="$out/site"
 mkdir -p "$out"
-bundle exec jekyll build --config _config.yml,_config-pdf.yml --destination "$site" --quiet
+# BOOK_CONFIG_EXTRA lets CI inject the real version number, the tag's, so the
+# colophon does not show the fallback field from _config.yml.
+bundle exec jekyll build \
+  --config "_config.yml,_config-pdf.yml${BOOK_CONFIG_EXTRA:+,$BOOK_CONFIG_EXTRA}" \
+  --destination "$site" --quiet
 
 if [ "$what" = all ] || [ "$what" = pdf ]; then
   weasyprint --presentational-hints "$site/pdf.html" "$out/$name.pdf"

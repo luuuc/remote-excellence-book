@@ -7,3 +7,6 @@ vendor
 
 # Book build
 build/
+
+# Written by CI when publishing
+_config-release.yml

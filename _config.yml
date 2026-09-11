@@ -54,6 +54,9 @@ downloads:
 book:
   published: "2025-05-15"
   modified: "2026-01-30"
+  # Fallback number, for a local build. The published number comes from the
+  # tag: .github/workflows/book.yml reads the highest one, adds one to the
+  # last number and injects it into the build.
   version: "2.3.0"
   license: "https://creativecommons.org/licenses/by-sa/4.0/"
   language: "en-US"

@@ -1,7 +1,13 @@
-# Builds the book as PDF and EPUB, once the site is deployed.
+# Builds the book as PDF and EPUB once the site is deployed, and publishes it
+# under a version number nobody has to write by hand.
 #
 # The trigger is the Pages workflow finishing, not the push: if the deploy
 # fails the book is not built, so the two files always match what is online.
+#
+# The version comes from the tags, never from a config field: the job reads the
+# highest three-part tag and adds one to the last number, so it can never
+# invent a number below what already exists. To move a minor or a major, push
+# that tag yourself once and the next build carries on from it.
 name: Build the book
 
 on:
@@ -9,29 +15,90 @@ on:
     workflows: ["Deploy Jekyll site to Pages"]
     types: [completed]
   workflow_dispatch:
+    inputs:
+      force:
+        description: "Publish even if the book has not changed"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
 
 concurrency:
-  group: "livre"
-  cancel-in-progress: true
+  group: "book"
+  cancel-in-progress: false
 
 env:
   # Pinned versions: the build must come out identical locally and here.
   PANDOC_VERSION: "3.9.0.2"
   WEASYPRINT_VERSION: "70.0"
+  # Everything the two files are made of. A change anywhere else, a README or a
+  # site stylesheet, publishes nothing.
+  BOOK_PATHS: >-
+    _chapters _data _pdf
+    _includes/book-body.html _includes/epub-body.html
+    assets/stylesheets/print.css assets/stylesheets/epub.css
+    assets/fonts assets/images/cover.png assets/images/sections
+    _config.yml _config-pdf.yml bin/build-book
 
 jobs:
-  build:
+  # Has the book changed since the last published version, and what number
+  # would the next one carry.
+  check:
     if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.decide.outputs.changed }}
+      version: ${{ steps.decide.outputs.version }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # The commit that produced the deployed site, not the branch head.
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+          # Full history and all tags: the number is read from them.
+          fetch-depth: 0
+
+      - id: decide
+        env:
+          FORCE: ${{ inputs.force }}
+        run: |
+          last=$(git tag -l --sort=v:refname | grep -E '^v[0-9]+\.[0-9]+\.[0-9]+$' | tail -1 || true)
+
+          if [ -z "$last" ]; then
+            echo "No version tag yet, first release."
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "version=v0.1.0" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          v=${last#v}
+          next="v$(echo "$v" | cut -d. -f1).$(echo "$v" | cut -d. -f2).$(( $(echo "$v" | cut -d. -f3) + 1 ))"
+
+          if [ "$FORCE" = "true" ]; then
+            changed=true
+            echo "Forced publish."
+          elif git diff --quiet "$last"..HEAD -- $BOOK_PATHS; then
+            changed=false
+            echo "Nothing in the book changed since $last, publishing nothing."
+          else
+            changed=true
+            echo "Changed since $last:"
+            git diff --name-only "$last"..HEAD -- $BOOK_PATHS | sed 's/^/  /'
+          fi
+
+          echo "changed=$changed" >> "$GITHUB_OUTPUT"
+          echo "version=$next" >> "$GITHUB_OUTPUT"
+
+  publish:
+    needs: check
+    if: needs.check.outputs.changed == 'true'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          # The commit that produced the deployed site, not the branch head.
           ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+          fetch-depth: 0
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
@@ -53,7 +120,12 @@ jobs:
           echo "$HOME/.local/bin" >> "$GITHUB_PATH"
 
       - name: Build the book
-        run: bin/build-book
+        env:
+          # The colophon and book.json print the real number, the tag's.
+          BOOK_VERSION: ${{ needs.check.outputs.version }}
+        run: |
+          printf 'book:\n  version: "%s"\n' "${BOOK_VERSION#v}" > _config-release.yml
+          BOOK_CONFIG_EXTRA=_config-release.yml bin/build-book
 
       - name: Check the output
         run: |
@@ -70,16 +142,16 @@ jobs:
             build/remote-excellence.epub
           if-no-files-found: error
 
-      # Both files are attached to the release carrying the book version from
-      # _config.yml (book.version). While that version does not move, every
-      # deploy replaces the files on the same release.
-      - name: Publish the release
+      # The tag lands on the commit that produced these files, and the release
+      # carries them. Every version keeps its own: nothing is ever replaced.
+      - name: Tag and publish
         env:
           GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ needs.check.outputs.version }}
         run: |
-          version=$(ruby -ryaml -e 'puts YAML.load_file("_config.yml")["book"]["version"]')
-          tag="v${version}"
-          if ! gh release view "$tag" >/dev/null 2>&1; then
-            gh release create "$tag" --title "Remote Excellence $version" --notes "PDF and EPUB of version $version."
-          fi
-          gh release upload "$tag" build/remote-excellence.pdf build/remote-excellence.epub --clobber
+          git tag "$VERSION"
+          git push origin "$VERSION"
+          gh release create "$VERSION" \
+            --title "Remote Excellence ${VERSION#v}" \
+            --notes "PDF and EPUB of version ${VERSION#v}." \
+            build/remote-excellence.pdf build/remote-excellence.epub
