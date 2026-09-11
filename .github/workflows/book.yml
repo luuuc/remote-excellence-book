@@ -51,7 +51,7 @@ jobs:
       changed: ${{ steps.decide.outputs.changed }}
       version: ${{ steps.decide.outputs.version }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           # The commit that produced the deployed site, not the branch head.
           ref: ${{ github.event.workflow_run.head_sha || github.sha }}
@@ -95,7 +95,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           ref: ${{ github.event.workflow_run.head_sha || github.sha }}
           fetch-depth: 0
@@ -134,7 +134,7 @@ jobs:
           ls -lh build
 
       - name: Upload the files
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: remote-excellence
           path: |
