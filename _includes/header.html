@@ -2,6 +2,45 @@
   <div class="container">
     <button class="hamburger" onclick="toggleMenu()">☰</button>
     <a href="/" class="logo">Remote Excellence</a>
-    <a href="/about" class="about">About</a>
+
+    <div class="header-actions">
+      <a href="/about" class="about">About</a>
+
+      <div class="download">
+        <button
+          type="button"
+          class="download-toggle"
+          id="download-toggle"
+          aria-haspopup="menu"
+          aria-expanded="false"
+          aria-controls="download-menu"
+          aria-label="Download the book"
+          title="Download the book"
+        >
+          <svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor"
+               stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3v11" />
+            <path d="M7.5 10 12 14.5 16.5 10" />
+            <path d="M4 19h16" />
+          </svg>
+        </button>
+
+        <div class="download-menu" id="download-menu" role="menu" hidden>
+          <a href="{{ site.downloads.pdf }}" role="menuitem">
+            Download as PDF
+            <small>A4, ready to print</small>
+          </a>
+          <a href="{{ site.downloads.epub }}" role="menuitem">
+            Download as EPUB
+            <small>E-readers, phones, tablets</small>
+          </a>
+          <hr />
+          <!-- Without JavaScript this is just the EPUB download. -->
+          <a href="{{ site.downloads.epub }}" role="menuitem" data-kindle="{{ site.downloads.kindle }}">
+            Send to my Kindle
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 </header>

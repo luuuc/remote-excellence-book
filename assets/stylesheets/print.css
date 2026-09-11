@@ -1,0 +1,488 @@
+/* Print stylesheet for the PDF (WeasyPrint). The site never loads it.
+
+   Exact A4, so printing neither crops nor shrinks anything. Everything with a
+   colour runs to the edge of the sheet: the cover and the part pages.
+
+   Same palette as the site: navy #253951, deep navy #1a2837, band #e8f2fc,
+   link #007acc, ground #f8f9fa, hairline #eee, body #333, meta #666. */
+
+@font-face { font-family: "Merriweather"; font-weight: 400; font-style: normal; src: url("../fonts/Merriweather-Regular.ttf"); }
+@font-face { font-family: "Merriweather"; font-weight: 700; font-style: normal; src: url("../fonts/Merriweather-Bold.ttf"); }
+@font-face { font-family: "Merriweather"; font-weight: 400; font-style: italic; src: url("../fonts/Merriweather-Italic.ttf"); }
+@font-face { font-family: "Merriweather"; font-weight: 700; font-style: italic; src: url("../fonts/Merriweather-BoldItalic.ttf"); }
+@font-face { font-family: "Archivo"; font-weight: 400; font-style: normal; src: url("../fonts/Archivo-Regular.ttf"); }
+@font-face { font-family: "Archivo"; font-weight: 600; font-style: normal; src: url("../fonts/Archivo-SemiBold.ttf"); }
+@font-face { font-family: "Archivo"; font-weight: 700; font-style: normal; src: url("../fonts/Archivo-Bold.ttf"); }
+
+/* ---------------------------------------------------------------- pages */
+
+@page {
+  size: A4;
+  margin: 25mm 25mm 22mm;
+
+  /* The running head disappears on the page that prints the title:
+     that is what first-except is for. */
+  @top-left { font-family: "Archivo", sans-serif; font-size: 8pt; font-weight: 600;
+              letter-spacing: 0.14em; text-transform: uppercase; color: #999;
+              vertical-align: bottom; padding-bottom: 6mm; }
+  @top-right { font-family: "Archivo", sans-serif; font-size: 8pt; font-weight: 600;
+               letter-spacing: 0.14em; text-transform: uppercase; color: #999;
+               vertical-align: bottom; padding-bottom: 6mm; text-align: right; }
+  @bottom-left { font-family: "Archivo", sans-serif; font-size: 9.5pt; font-weight: 600;
+                 color: #007acc; vertical-align: top; padding-top: 7mm; }
+  @bottom-right { font-family: "Archivo", sans-serif; font-size: 9.5pt; font-weight: 600;
+                  color: #007acc; vertical-align: top; padding-top: 7mm; text-align: right; }
+}
+
+/* Inner margin wider than the outer one: the binding eats paper. */
+@page :left {
+  margin-left: 25mm;
+  margin-right: 30mm;
+  @top-left { content: string(booktitle, first-except); }
+  @bottom-left { content: counter(page); }
+}
+
+@page :right {
+  margin-left: 30mm;
+  margin-right: 25mm;
+  @top-right { content: string(chaptertitle, first-except); }
+  @bottom-right { content: counter(page); }
+}
+
+/* Pages inserted to land on an even page stay bare. */
+@page :blank {
+  @top-left { content: none; }
+  @top-right { content: none; }
+  @bottom-left { content: none; }
+  @bottom-right { content: none; }
+}
+
+/* Cover and part pages: navy edge to edge, no marks. */
+@page cover {
+  margin: 0;
+  background: #1a2837;
+}
+
+@page part {
+  margin: 0;
+  background: #1a2837;
+  @top-left { content: none; }
+  @top-right { content: none; }
+  @bottom-left { content: none; }
+  @bottom-right { content: none; }
+}
+
+@page front {
+  @top-left { content: none; }
+  @top-right { content: none; }
+  @bottom-left { content: none; }
+  @bottom-right { content: none; }
+}
+
+/* ----------------------------------------------------------------- base */
+
+html {
+  font-family: "Merriweather", Georgia, serif;
+  font-size: 12pt;
+  line-height: 1.62;
+  color: #333;
+  hyphens: none;
+  orphans: 2;
+  widows: 2;
+}
+
+body { margin: 0; }
+p { margin: 0 0 0.85em; }
+a { color: #253951; text-decoration: none; }
+strong { font-weight: 700; color: #253951; }
+em { font-style: italic; }
+
+/* ------------------------------------------------------------------ cover */
+
+.cover { page: cover; }
+
+/* The image is 2:3 and the sheet is A4: it is laid down whole, and the two
+   bands left over are the same navy as the image itself. */
+.cover img {
+  display: block;
+  width: 210mm;
+  height: 297mm;
+  object-fit: contain;
+}
+
+/* ---------------------------------------------------- title page, colophon */
+
+.front {
+  page: front;
+  break-before: page;
+  height: 250mm;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.front-kicker {
+  font-family: "Archivo", sans-serif;
+  font-size: 9pt;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #007acc;
+  margin: 0;
+}
+
+.front-rule {
+  width: 20mm;
+  height: 4px;
+  background: #007acc;
+  margin: 16mm 0 8mm;
+}
+
+.front-title {
+  font-size: 48pt;
+  font-weight: 700;
+  line-height: 0.98;
+  letter-spacing: -0.03em;
+  color: #253951;
+  margin: 0;
+  bookmark-level: none;
+}
+
+.front-sub {
+  font-family: "Archivo", sans-serif;
+  font-size: 12.5pt;
+  line-height: 1.5;
+  color: #666;
+  margin: 7mm 0 0;
+  max-width: 18em;
+}
+
+.front-author {
+  font-family: "Archivo", sans-serif;
+  font-size: 12.5pt;
+  font-weight: 600;
+  color: #253951;
+  margin: 0;
+}
+
+.front-spine {
+  font-family: "Archivo", sans-serif;
+  font-size: 8.4pt;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #999;
+  margin: 3mm 0 0;
+}
+
+.colophon {
+  font-family: "Archivo", sans-serif;
+  font-size: 9.6pt;
+  line-height: 1.72;
+  color: #666;
+}
+
+.colophon p { margin: 0 0 0.7em; }
+.colophon a { color: #007acc; }
+.colophon strong { color: #253951; font-weight: 600; }
+
+/* -------------------------------------------------------------- contents */
+
+.toc { break-before: left; }
+
+.toc-title {
+  font-size: 30pt;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #253951;
+  margin: 0 0 12mm;
+  padding-bottom: 4mm;
+  border-bottom: 4px solid #007acc;
+  bookmark-level: 1;
+  bookmark-label: "Contents";
+}
+
+.toc-group { margin-bottom: 10mm; }
+
+.toc-group-title {
+  font-family: "Archivo", sans-serif;
+  font-size: 10pt;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #253951;
+  margin: 0 0 5mm;
+  padding-top: 3mm;
+  border-top: 1px solid #eee;
+  break-after: avoid;
+}
+
+.toc-group-title em {
+  font-style: normal;
+  color: #007acc;
+  margin-right: 0.5em;
+}
+
+.toc ul { list-style: none; margin: 0; padding: 0; }
+
+.toc a {
+  display: block;
+  text-decoration: none;
+}
+
+/* The leader dots and the folio come from WeasyPrint: leader() draws the line,
+   target-counter() reads the real page number of the target. */
+.toc a::after {
+  content: leader(". ") target-counter(attr(href), page);
+  font-family: "Archivo", sans-serif;
+  font-size: 9.4pt;
+  font-weight: 600;
+  color: #007acc;
+}
+
+.toc-group-title a { color: inherit; }
+
+.toc-entry a {
+  font-size: 10.4pt;
+  line-height: 1.5;
+  color: #333;
+  padding-left: 7mm;
+}
+
+.toc-entry a .num {
+  font-family: "Archivo", sans-serif;
+  font-size: 8.6pt;
+  font-weight: 600;
+  color: #999;
+  margin-right: 0.45em;
+}
+
+/* ------------------------------------------------------------ part pages */
+
+/* One navy page per part, on an even page. Its back stays navy: the blank
+   sheet the even-page rule would otherwise force there reads as a mistake
+   between a navy page and the chapter that follows. */
+.part { page: part; break-before: left; }
+
+.part-face {
+  height: 297mm;
+  padding: 48mm 30mm 25mm;
+  color: #ffffff;
+}
+
+/* The drawings are stroked in navy, so they sit on a light chip rather than
+   straight on the navy page. */
+.part-mark {
+  display: inline-block;
+  background: #e8f2fc;
+  padding: 6mm;
+  margin-bottom: 14mm;
+}
+
+.part-mark img {
+  display: block;
+  width: 26mm;
+  height: 26mm;
+}
+
+.part-number {
+  font-family: "Archivo", sans-serif;
+  font-size: 12pt;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #007acc;
+  margin: 0;
+}
+
+.part-rule {
+  width: 20mm;
+  height: 4px;
+  background: #007acc;
+  margin: 8mm 0;
+}
+
+.part-title {
+  font-size: 44pt;
+  font-weight: 700;
+  line-height: 1.04;
+  letter-spacing: -0.025em;
+  color: #ffffff;
+  margin: 0;
+  max-width: 11em;
+  bookmark-level: 1;
+  bookmark-label: content(text);
+}
+
+.part-lede {
+  font-family: "Archivo", sans-serif;
+  font-size: 12pt;
+  line-height: 1.5;
+  color: #a9c0d6;
+  margin: 8mm 0 0;
+  max-width: 22em;
+}
+
+.part-back { break-before: page; height: 40mm; }
+
+/* --------------------------------------------------------------- chapters */
+
+/* The rule: every chapter starts on an even page. Reading left to right, an
+   even page is a left-hand page, so a chapter always opens a full spread. */
+.chapter { break-before: left; }
+
+.chapter-head { margin-bottom: 9mm; }
+
+.chapter-kicker {
+  font-family: "Archivo", sans-serif;
+  font-size: 8.4pt;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #007acc;
+  margin: 0 0 3mm;
+}
+
+.chapter-kicker span + span::before {
+  content: "/";
+  margin: 0 0.5em;
+  color: #ccc;
+}
+
+.chapter-title {
+  font-size: 21pt;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+  color: #253951;
+  margin: 0;
+  string-set: chaptertitle content(text), booktitle "Remote Excellence";
+  bookmark-level: 2;
+  bookmark-label: content(text);
+}
+
+.chapter-lede {
+  font-family: "Archivo", sans-serif;
+  font-size: 11pt;
+  line-height: 1.5;
+  color: #666;
+  margin: 4mm 0 0;
+}
+
+.chapter-head::after {
+  content: "";
+  display: block;
+  width: 20mm;
+  height: 4px;
+  background: #007acc;
+  margin-top: 6mm;
+}
+
+/* ------------------------------------------------------------------ text */
+
+.prose {
+  text-align: justify;
+  hyphens: auto;
+}
+
+.prose h4,
+.prose h5 { text-align: left; hyphens: none; bookmark-level: none; }
+
+.prose h4 {
+  font-family: "Archivo", sans-serif;
+  font-size: 13pt;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #253951;
+  margin: 1.5em 0 0.55em;
+  break-after: avoid;
+}
+
+.prose h5 {
+  font-size: 12.5pt;
+  font-weight: 700;
+  color: #253951;
+  margin: 1.3em 0 0.4em;
+  break-after: avoid;
+}
+
+.prose ul,
+.prose ol { margin: 0 0 0.9em; padding-left: 1.15em; }
+.prose li { margin-bottom: 0.3em; }
+.prose li::marker { color: #007acc; }
+
+.prose hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 1.6em 0;
+}
+
+.prose blockquote {
+  background: #f8f9fa;
+  border-left: 3px solid #253951;
+  padding: 0.55em 0.8em;
+  margin: 1.1em 0;
+  font-style: italic;
+  font-size: 11pt;
+  break-inside: avoid;
+}
+
+.prose blockquote p { margin-bottom: 0; }
+
+.prose code {
+  font-family: "Menlo", monospace;
+  font-size: 9.6pt;
+  background: #f8f9fa;
+  padding: 0 0.25em;
+}
+
+.prose pre {
+  background: #f8f9fa;
+  padding: 0.7em;
+  font-size: 9.4pt;
+  white-space: pre-wrap;
+  break-inside: avoid;
+}
+
+.prose a {
+  text-decoration: underline;
+  text-decoration-color: #007acc;
+  text-underline-offset: 2px;
+}
+
+.prose .callout {
+  border: 1px solid #eee;
+  border-left: 4px solid #eee;
+  padding: 0.7em 0.85em;
+  margin: 1.1em 0;
+  font-size: 11pt;
+  break-inside: avoid;
+}
+
+.prose .callout-hint { border-left-color: #5cb85c; }
+.prose .callout-example { border-left-color: #5bc0de; }
+.prose .callout-warning { border-left-color: #f0ad4e; }
+
+/* ----------------------------------------------------------------- notes */
+
+.prose sup a {
+  font-family: "Archivo", sans-serif;
+  font-size: 7.6pt;
+  font-weight: 600;
+  color: #007acc;
+  text-decoration: none;
+}
+
+.prose .footnotes {
+  margin-top: 1.8em;
+  padding-top: 0.9em;
+  border-top: 1px solid #eee;
+  font-size: 9.4pt;
+  line-height: 1.5;
+  color: #666;
+}
+
+.prose .footnotes ol { padding-left: 1.1em; }
+.prose .footnotes li { margin-bottom: 0.45em; }
+.prose .footnotes p { margin-bottom: 0; }
+.prose .footnotes a { text-decoration: none; color: #007acc; }

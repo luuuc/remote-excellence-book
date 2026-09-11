@@ -1,0 +1,85 @@
+# Builds the book as PDF and EPUB, once the site is deployed.
+#
+# The trigger is the Pages workflow finishing, not the push: if the deploy
+# fails the book is not built, so the two files always match what is online.
+name: Build the book
+
+on:
+  workflow_run:
+    workflows: ["Deploy Jekyll site to Pages"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: "livre"
+  cancel-in-progress: true
+
+env:
+  # Pinned versions: the build must come out identical locally and here.
+  PANDOC_VERSION: "3.9.0.2"
+  WEASYPRINT_VERSION: "70.0"
+
+jobs:
+  build:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # The commit that produced the deployed site, not the branch head.
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: Install Pandoc
+        run: |
+          curl -sSLo /tmp/pandoc.deb \
+            "https://github.com/jgm/pandoc/releases/download/${PANDOC_VERSION}/pandoc-${PANDOC_VERSION}-1-amd64.deb"
+          sudo dpkg -i /tmp/pandoc.deb
+
+      - name: Install WeasyPrint
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            libpango-1.0-0 libpangoft2-1.0-0 libharfbuzz-subset0
+          pipx install "weasyprint==${WEASYPRINT_VERSION}"
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+
+      - name: Build the book
+        run: bin/build-book
+
+      - name: Check the output
+        run: |
+          test -s build/remote-excellence.pdf
+          test -s build/remote-excellence.epub
+          ls -lh build
+
+      - name: Upload the files
+        uses: actions/upload-artifact@v4
+        with:
+          name: remote-excellence
+          path: |
+            build/remote-excellence.pdf
+            build/remote-excellence.epub
+          if-no-files-found: error
+
+      # Both files are attached to the release carrying the book version from
+      # _config.yml (book.version). While that version does not move, every
+      # deploy replaces the files on the same release.
+      - name: Publish the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          version=$(ruby -ryaml -e 'puts YAML.load_file("_config.yml")["book"]["version"]')
+          tag="v${version}"
+          if ! gh release view "$tag" >/dev/null 2>&1; then
+            gh release create "$tag" --title "Remote Excellence $version" --notes "PDF and EPUB of version $version."
+          fi
+          gh release upload "$tag" build/remote-excellence.pdf build/remote-excellence.epub --clobber

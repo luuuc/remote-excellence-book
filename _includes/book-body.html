@@ -1,0 +1,48 @@
+{% comment %}
+The body of the book, shared by both editions: _pdf/book.html (PDF) and
+_pdf/epub.html (EPUB). One place decides the order of parts and chapters.
+
+Heading levels follow the book: a part is an h1, a chapter an h2. The sub-heads
+written in the markdown drop a level (h2 -> h4, h3 -> h5) so they stay out of
+the EPUB navigation and the PDF bookmarks.
+{% endcomment %}
+{% assign chapters = site.chapters | sort: "order" %}
+{% for part in site.data.parts %}
+  <section class="part" id="part-{{ forloop.index }}">
+    <div class="part-face">
+      {% if part.illustration %}
+        <div class="part-mark">
+          <img src="assets/images/sections/{{ part.illustration }}.svg" alt="" />
+        </div>
+      {% endif %}
+      {% if part.number %}<p class="part-number">Part {{ part.number }}</p>{% endif %}
+      <div class="part-rule"></div>
+      <h1 class="part-title">{{ part.name }}</h1>
+      {% if part.description %}<p class="part-lede">{{ part.description }}</p>{% endif %}
+    </div>
+    <!-- Back of the part page: navy as well, see print.css -->
+    <div class="part-back"></div>
+  </section>
+
+  {% assign items = chapters | where: "part", part.name %}
+  {% for c in items %}
+    {% assign body = c.content
+      | replace: 'href="/chapters/', 'href="#'
+      | replace: '<h3', '<h5' | replace: '</h3>', '</h5>'
+      | replace: '<h2', '<h4' | replace: '</h2>', '</h4>' %}
+    <section class="chapter chapter--entry" id="{{ c.url | split: '/' | last }}">
+      <header class="chapter-head">
+        <p class="chapter-kicker">
+          <span>{{ c.part }}</span>
+          {% unless c.show_chapter_number == false %}<span>Principle {{ c.metadata.principle }}</span>{% endunless %}
+          {% if c.metadata.reading_time_in_minutes %}<span>{{ c.metadata.reading_time_in_minutes }} min</span>{% endif %}
+        </p>
+        <h2 class="chapter-title">{{ c.title }}</h2>
+        {% if c.description %}<p class="chapter-lede">{{ c.description }}</p>{% endif %}
+      </header>
+
+      <!-- Links between chapters become internal references in the book. -->
+      <div class="prose">{{ body }}</div>
+    </section>
+  {% endfor %}
+{% endfor %}

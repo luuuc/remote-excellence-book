@@ -37,6 +37,19 @@ plugins:
 include:
   - .well-known
 
+# The repository, used for the release download links below.
+repository: luuuc/remote-excellence-book
+
+# The two editions, published by .github/workflows/book.yml on the release that
+# carries book.version. "latest" always follows the most recent one, so these
+# two addresses never need updating.
+downloads:
+  pdf: "https://github.com/luuuc/remote-excellence-book/releases/latest/download/remote-excellence.pdf"
+  epub: "https://github.com/luuuc/remote-excellence-book/releases/latest/download/remote-excellence.epub"
+  # Amazon offers no API for putting a file on someone's device. This is its
+  # own upload tool, where the reader drops the EPUB they just downloaded.
+  kindle: "https://www.amazon.com/sendtokindle"
+
 # Book metadata for AI parsing
 book:
   published: "2025-05-15"

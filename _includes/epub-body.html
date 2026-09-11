@@ -1,0 +1,29 @@
+{% comment %}
+The body of the book for the EPUB. Same order and same content as
+_includes/book-body.html, but flat: Pandoc builds its navigation and splits its
+files from top-level headings only, and a heading buried in a <section> reaches
+neither.
+
+Part = h1, chapter = h2. Markdown sub-heads drop a level, as in the PDF.
+{% endcomment %}
+{% assign chapters = site.chapters | sort: "order" %}
+{% for part in site.data.parts %}
+  <h1 class="part-title" id="part-{{ forloop.index }}">{% if part.number %}<span class="part-number">Part {{ part.number }}</span> {% endif %}{{ part.name }}</h1>
+  {% if part.description %}<div class="part-lede">{{ part.description }}</div>{% endif %}
+
+  {% assign items = chapters | where: "part", part.name %}
+  {% for c in items %}
+    {% assign body = c.content
+      | replace: 'href="/chapters/', 'href="#'
+      | replace: '<h3', '<h5' | replace: '</h3>', '</h5>'
+      | replace: '<h2', '<h4' | replace: '</h2>', '</h4>' %}
+    <h2 class="chapter-title" id="{{ c.url | split: '/' | last }}">{{ c.title }}</h2>
+    <div class="chapter-kicker">
+      <span>{{ c.part }}</span>
+      {% unless c.show_chapter_number == false %}<span>Principle {{ c.metadata.principle }}</span>{% endunless %}
+      {% if c.metadata.reading_time_in_minutes %}<span>{{ c.metadata.reading_time_in_minutes }} min</span>{% endif %}
+    </div>
+    {% if c.description %}<div class="chapter-lede">{{ c.description }}</div>{% endif %}
+    <div class="prose">{{ body }}</div>
+  {% endfor %}
+{% endfor %}

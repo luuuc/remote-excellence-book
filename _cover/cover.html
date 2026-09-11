@@ -1,0 +1,42 @@
+<!-- Cover source. Rendered with:
+     "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless --disable-gpu \
+       --hide-scrollbars --virtual-time-budget=8000 --screenshot=out.png \
+       --window-size=800,1200 --force-device-scale-factor=1.5 file://$PWD/_cover/cover.html
+     Output: assets/images/cover.png (1200x1800)
+     Every word on it is the book's own: the title, the opening line, the
+     tagline from index.md, the author. -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-font-smoothing: antialiased; }
+  html, body { width: 800px; height: 1200px; background: #1a2837; }
+  .cover { width: 800px; height: 1200px; padding: 68px; display: flex; flex-direction: column; justify-content: space-between; font-family: "Merriweather", Georgia, serif; }
+  .kick { font-family: "Archivo", sans-serif; font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.18em; color: #007acc; }
+  .claim { border-left: 3px solid #34506e; padding-left: 26px; margin-top: 104px; }
+  .src { font-family: "Archivo", sans-serif; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.16em; color: #6f8ba7; margin-bottom: 20px; }
+  .line { font-size: 40px; line-height: 1.24; font-weight: 700; color: #e8f2fc; letter-spacing: -0.01em; }
+  .line em { font-style: normal; color: #007acc; }
+  .rule { height: 4px; background: #007acc; width: 100px; margin: 84px 0 30px; }
+  .title { font-size: 92px; line-height: 0.98; font-weight: 700; color: #ffffff; letter-spacing: -0.035em; }
+  .sub { font-family: "Archivo", sans-serif; font-size: 20px; line-height: 1.5; color: #a9c0d6; margin-top: 28px; max-width: 18em; }
+  .author { font-family: "Archivo", sans-serif; font-size: 18px; font-weight: 600; color: #ffffff; }
+  .spine { font-family: "Archivo", sans-serif; font-size: 12.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.16em; color: #6f8ba7; margin-top: 18px; }
+</style></head><body>
+<div class="cover">
+  <div>
+    <div class="kick">A practical guide for distributed teams</div>
+    <div class="claim">
+      <div class="src">The premise</div>
+      <div class="line">Remote work isn't a policy.<br><em>It's a system.</em></div>
+    </div>
+    <div class="rule"></div>
+    <div class="title">Remote<br>Excellence</div>
+    <div class="sub">The calmer, clearer, more focused way to run remote teams.</div>
+  </div>
+  <div>
+    <div class="author">Luc B. Perussault-Diallo</div>
+    <div class="spine">Nine parts · Short chapters · Strong opinions</div>
+  </div>
+</div>
+</body></html>

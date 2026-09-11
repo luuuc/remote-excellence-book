@@ -1,0 +1,65 @@
+#!/bin/sh
+# Builds the book as PDF and EPUB.
+# Output: build/remote-excellence.pdf, build/remote-excellence.epub
+#
+#   bin/build-book        both
+#   bin/build-book pdf    the PDF only
+#   bin/build-book epub   the EPUB only
+#
+# Jekyll assembles the book into one HTML page per format (_pdf/book.html and
+# _pdf/epub.html, shared body in _includes/book-body.html). WeasyPrint paginates
+# the first, Pandoc packages the second.
+#
+#   brew install weasyprint pandoc
+set -e
+cd "$(dirname "$0")/.."
+
+what="${1:-all}"
+out="build"
+name="remote-excellence"
+
+need() {
+  command -v "$1" >/dev/null 2>&1 || { echo "$1 not found. brew install $1" >&2; exit 1; }
+}
+
+case "$what" in
+  pdf)  need weasyprint ;;
+  epub) need pandoc ;;
+  all)  need weasyprint; need pandoc ;;
+  *)    echo "usage: bin/build-book [pdf|epub]" >&2; exit 2 ;;
+esac
+
+# The book is built in its own directory. _site stays the site's: the book
+# build turns auto_ids off (see _config-pdf.yml) and a _site produced here
+# would be missing the heading anchors the published site needs.
+site="$out/site"
+mkdir -p "$out"
+bundle exec jekyll build --config _config.yml,_config-pdf.yml --destination "$site" --quiet
+
+if [ "$what" = all ] || [ "$what" = pdf ]; then
+  weasyprint --presentational-hints "$site/pdf.html" "$out/$name.pdf"
+  echo "$out/$name.pdf"
+fi
+
+if [ "$what" = all ] || [ "$what" = epub ]; then
+  # --split-level=2 : one file per part and per chapter.
+  # --toc-depth=2   : navigation reads parts > chapters.
+  pandoc "$site/epub.html" \
+    --from=html \
+    --to=epub3 \
+    --standalone \
+    --metadata-file="$site/epub-metadata.yml" \
+    --resource-path="$site" \
+    --epub-cover-image="$site/assets/images/cover.png" \
+    --css=assets/stylesheets/epub.css \
+    --epub-embed-font=assets/fonts/Merriweather-Regular.ttf \
+    --epub-embed-font=assets/fonts/Merriweather-Bold.ttf \
+    --epub-embed-font=assets/fonts/Merriweather-Italic.ttf \
+    --epub-embed-font=assets/fonts/Merriweather-BoldItalic.ttf \
+    --epub-embed-font=assets/fonts/Archivo-Regular.ttf \
+    --epub-embed-font=assets/fonts/Archivo-Bold.ttf \
+    --split-level=2 \
+    --toc-depth=2 \
+    --output="$out/$name.epub"
+  echo "$out/$name.epub"
+fi

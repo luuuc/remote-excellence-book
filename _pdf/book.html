@@ -1,0 +1,91 @@
+---
+layout: none
+permalink: /pdf.html
+sitemap: false
+---
+{% comment %}
+The whole book as one document, for WeasyPrint. Built by bin/build-book, never
+by the site build: the `pdf` collection is declared only in _config-pdf.yml.
+
+Pagination, running heads, the leader dots in the contents and the page numbers
+all live in assets/stylesheets/print.css. The body is shared with the EPUB, in
+_includes/book-body.html.
+{% endcomment %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ site.title }} — {{ site.author.name }}</title>
+    <meta name="author" content="{{ site.author.name }}" />
+    <link rel="stylesheet" href="assets/stylesheets/print.css" />
+  </head>
+  <body>
+    <!-- Cover, full page -->
+    <section class="cover">
+      <img src="assets/images/cover.png" alt="{{ site.title }}" />
+    </section>
+
+    <!-- Title page -->
+    <section class="front">
+      <div>
+        <p class="front-kicker">A practical guide for distributed teams</p>
+        <div class="front-rule"></div>
+        <h1 class="front-title">Remote<br />Excellence</h1>
+        <p class="front-sub">The calmer, clearer, more focused way to run remote teams.</p>
+      </div>
+      <div>
+        <p class="front-author">{{ site.author.name }}</p>
+        <p class="front-spine">Nine parts · Short chapters · Strong opinions</p>
+      </div>
+    </section>
+
+    <!-- Colophon -->
+    <section class="front colophon">
+      <div>
+        <p><strong>{{ site.title }}</strong> — version {{ site.book.version }}, {{ site.book.published }}.</p>
+        <p>
+          © 2026 {{ site.author.name }}. Licensed under
+          <a href="{{ site.book.license }}">Creative Commons CC BY-SA 4.0</a>: you may copy,
+          redistribute and adapt this text, including commercially, as long as you credit the
+          author and share under the same terms.
+        </p>
+        <p>
+          The book is also free to read at <a href="{{ site.url }}">{{ site.url | remove: "https://" }}</a>,
+          and its source is open at
+          <a href="https://github.com/{{ site.repository }}">github.com/{{ site.repository }}</a>.
+        </p>
+      </div>
+      <div>
+        <p class="front-spine">Set in Merriweather and Archivo</p>
+      </div>
+    </section>
+
+    <!-- Contents. The EPUB has none: Pandoc builds its own navigation. -->
+    <section class="toc">
+      <h1 class="toc-title">Contents</h1>
+
+      {% assign chapters = site.chapters | sort: "order" %}
+      {% for part in site.data.parts %}
+        <div class="toc-group">
+          <p class="toc-group-title">
+            <a href="#part-{{ forloop.index }}"
+              >{% if part.number %}<em>{{ part.number }}.</em>{% endif %}{{ part.name }}</a
+            >
+          </p>
+          <ul>
+            {% assign items = chapters | where: "part", part.name %}
+            {% for c in items %}
+              <li class="toc-entry">
+                <a href="#{{ c.url | split: '/' | last }}"
+                  >{% unless c.show_chapter_number == false %}<span class="num">{{ c.metadata.principle }}.</span>{% endunless %}{{ c.title }}</a
+                >
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+    </section>
+
+    {% include book-body.html %}
+  </body>
+</html>

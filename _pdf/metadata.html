@@ -1,0 +1,31 @@
+---
+layout: none
+permalink: /epub-metadata.yml
+sitemap: false
+---
+{% comment %}
+EPUB metadata, read by Pandoc. The file is named .html because Jekyll treats any
+.yml inside a collection as a data file and emits nothing from it; the permalink
+gives it its real name back. Single source: _config.yml.
+{% endcomment %}
+title: "{{ site.title }}"
+subtitle: "{{ site.description | strip_newlines | split: '.' | first }}."
+author:
+  - "{{ site.author.name }}"
+creator:
+  - role: author
+    text: "{{ site.author.name }}"
+publisher: "{{ site.author.name }}"
+date: "{{ site.book.modified }}"
+lang: en-US
+identifier:
+  - scheme: URI
+    text: "{{ site.url }}"
+rights: "© 2026 {{ site.author.name }}. CC BY-SA 4.0 — {{ site.book.license }}"
+description: "{{ site.description | strip_newlines | strip }}"
+subject:
+  - remote work
+  - distributed teams
+  - management
+  - async communication
+  - leadership

@@ -1,0 +1,22 @@
+# Config overlay for the book build: bundle exec jekyll build
+# --config _config.yml,_config-pdf.yml
+#
+# The `pdf` collection exists only in this file. Without it Jekyll ignores the
+# _pdf directory, so the published site never contains the print pages.
+collections:
+  chapters:
+    output: true
+    sort_by: order
+  chapters_v1:
+    output: true
+    permalink: /v1/:path/
+  pdf:
+    output: true
+
+kramdown:
+  # A guard, not a fix for anything today: no chapter currently uses markdown
+  # sub-heads. The day one does, the same sub-head repeated across chapters
+  # would generate colliding ids inside a single EPUB file, which is invalid.
+  # Nothing links to those ids: the only anchors in the book are footnotes,
+  # which kramdown numbers separately.
+  auto_ids: false

@@ -1,0 +1,197 @@
+/* EPUB stylesheet. Same palette and same faces as the site and the PDF, but an
+   EPUB reflows: nothing here talks about even pages or page numbers. What does
+   carry over is the look of a part opening and of a chapter.
+
+   Palette: navy #253951, deep navy #1a2837, band #e8f2fc, link #007acc,
+   ground #f8f9fa, hairline #eee, body #333, meta #666. */
+
+@font-face { font-family: "Merriweather"; font-weight: normal; font-style: normal; src: url("../fonts/Merriweather-Regular.ttf"); }
+@font-face { font-family: "Merriweather"; font-weight: bold; font-style: normal; src: url("../fonts/Merriweather-Bold.ttf"); }
+@font-face { font-family: "Merriweather"; font-weight: normal; font-style: italic; src: url("../fonts/Merriweather-Italic.ttf"); }
+@font-face { font-family: "Merriweather"; font-weight: bold; font-style: italic; src: url("../fonts/Merriweather-BoldItalic.ttf"); }
+@font-face { font-family: "Archivo"; font-weight: normal; font-style: normal; src: url("../fonts/Archivo-Regular.ttf"); }
+@font-face { font-family: "Archivo"; font-weight: bold; font-style: normal; src: url("../fonts/Archivo-Bold.ttf"); }
+
+body {
+  font-family: "Merriweather", Georgia, serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0 1em;
+  widows: 2;
+  orphans: 2;
+}
+
+p { margin: 0 0 0.85em; text-align: justify; }
+a { color: #253951; }
+strong { color: #253951; }
+
+/* ------------------------------------------------------------ part pages */
+
+/* The navy page of the paper edition. A reader keeps its own margins around
+   the text: the navy cannot reach the edge of the screen, it reaches the edge
+   of the text area. It does take the full page height, and nothing else sits
+   on it.
+   height in vh: a reader that does not know the unit falls back to the height
+   of the content instead of spilling onto a second page. */
+h1.part-title {
+  page-break-before: always;
+  break-before: page;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: #1a2837;
+  color: #ffffff;
+  margin: 0 -1em;
+  padding: 4em 2.4em;
+  padding-top: 22vh;
+  font-size: 1.8em;
+  line-height: 1.15;
+  font-weight: bold;
+  overflow-wrap: break-word;
+}
+
+.part-number {
+  display: block;
+  font-family: "Archivo", sans-serif;
+  font-size: 0.5em;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #007acc;
+  margin: 0;
+}
+
+/* The blue rule of the PDF, between the number and the name. It goes through
+   an ::after because a heading cannot hold a block. */
+.part-number::after {
+  content: "";
+  display: block;
+  width: 3.4em;
+  height: 3px;
+  background: #007acc;
+  margin: 1.5em 0 1.7em;
+}
+
+/* The part description belongs to the navy page in the PDF. Here the page
+   is the heading itself, so it follows as its own line. */
+div.part-lede {
+  font-family: "Archivo", sans-serif;
+  font-size: 0.95em;
+  line-height: 1.5;
+  color: #666;
+  margin: 0 0 2em;
+  text-align: left;
+}
+
+/* ------------------------------------------------------------- chapters */
+
+h2.chapter-title {
+  page-break-before: always;
+  break-before: page;
+  font-size: 1.5em;
+  line-height: 1.25;
+  color: #253951;
+  margin: 0 0 0.5em;
+}
+
+div.chapter-kicker {
+  font-family: "Archivo", sans-serif;
+  font-size: 0.72em;
+  font-weight: bold;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #007acc;
+  margin: 0 0 1.4em;
+  text-align: left;
+}
+
+div.chapter-kicker span + span:before {
+  content: "/";
+  margin: 0 0.5em;
+  color: #ccc;
+}
+
+div.chapter-lede {
+  font-family: "Archivo", sans-serif;
+  font-size: 0.95em;
+  color: #666;
+  margin: -0.8em 0 1.6em;
+  text-align: left;
+}
+
+/* ------------------------------------------------------------------ text */
+
+.prose h4 {
+  font-family: "Archivo", sans-serif;
+  font-size: 1.02em;
+  color: #253951;
+  margin: 1.8em 0 0.5em;
+  page-break-after: avoid;
+}
+
+.prose h5 {
+  font-size: 1em;
+  color: #253951;
+  margin: 1.5em 0 0.4em;
+  page-break-after: avoid;
+}
+
+.prose ul, .prose ol { margin: 0 0 1em; padding-left: 1.3em; }
+.prose li { margin-bottom: 0.35em; }
+
+.prose hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 2em 0;
+}
+
+.prose blockquote {
+  background: #f8f9fa;
+  border-left: 3px solid #253951;
+  margin: 1.2em 0;
+  padding: 0.6em 0.9em;
+  font-style: italic;
+  font-size: 0.94em;
+}
+
+.prose blockquote p { margin: 0; }
+
+.prose code {
+  font-family: monospace;
+  font-size: 0.88em;
+  background: #f8f9fa;
+}
+
+.prose pre {
+  background: #f8f9fa;
+  padding: 0.8em;
+  font-size: 0.85em;
+  white-space: pre-wrap;
+}
+
+.prose .callout {
+  border: 1px solid #eee;
+  border-left: 4px solid #eee;
+  padding: 0.8em 0.9em;
+  margin: 1.2em 0;
+  font-size: 0.94em;
+}
+
+.prose .callout-hint { border-left-color: #5cb85c; }
+.prose .callout-example { border-left-color: #5bc0de; }
+.prose .callout-warning { border-left-color: #f0ad4e; }
+
+/* ----------------------------------------------------------------- notes */
+
+sup a { font-size: 0.7em; color: #007acc; text-decoration: none; }
+
+.footnotes {
+  margin-top: 2.5em;
+  padding-top: 1em;
+  border-top: 1px solid #eee;
+  font-size: 0.85em;
+  color: #666;
+}
+
+.footnotes p { text-align: left; }
+.footnotes a { color: #007acc; text-decoration: none; }

@@ -1,0 +1,21 @@
+---
+layout: none
+permalink: /epub.html
+sitemap: false
+---
+{% comment %}
+The same book, flattened for Pandoc. No cover and no contents here: Pandoc adds
+the cover (--epub-cover-image) and builds navigation from the headings. An EPUB
+reflows, so the PDF's pagination rules (even pages, a spread per chapter) mean
+nothing and are not carried over.
+{% endcomment %}
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ site.title }}</title>
+  </head>
+  <body>
+    {% include epub-body.html %}
+  </body>
+</html>

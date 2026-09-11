@@ -8,6 +8,21 @@ Most companies treat remote work as an accommodation. The best treat it as a sys
 
 Based on 20+ years leading remote teams across continents. No theory. No fluff. Just what works.
 
+## Building the book
+
+```sh
+brew install weasyprint pandoc
+bin/build-book          # both
+bin/build-book pdf      # the PDF only
+bin/build-book epub     # the EPUB only
+```
+
+Output in `build/`. Jekyll assembles the book into one HTML page per format (`_pdf/`, shared body in `_includes/book-body.html`), WeasyPrint paginates the PDF, Pandoc packages the EPUB.
+
+The PDF is A4: full-page cover, paginated contents, one navy page per part, and every part and every chapter starting on an even page. The EPUB reflows, so it keeps the cover, the navigation and the look of a chapter, but not the pagination rules.
+
+Both are built automatically after each site deploy, by [`.github/workflows/book.yml`](.github/workflows/book.yml), and attached to the release carrying `book.version`.
+
 ## What's Inside
 
 37 chapters across 9 sections:
